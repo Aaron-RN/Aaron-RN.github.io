@@ -1,0 +1,28 @@
+/*Safari, Chrome, Opera*/
+@-webkit-keyframes heat {
+    50% {color:rgb(150,70,20);opacity:0.9;}
+}
+@-webkit-keyframes burn {
+    50% {opacity:0.8;
+      transform:rotate3d(1,1,0,20deg);}
+}
+
+
+/*Mozilla*/
+@-moz-keyframes heat {
+    50% {color:rgb(150,70,20);opacity:0.9;}
+}
+@-moz-keyframes burn {
+    50% {opacity:0.8;
+      transform:rotate3d(1,1,0,20deg);}
+}
+
+
+/* Standard syntax */
+@keyframes heat {
+    50% {color: rgb(150,70,20); opacity:0.9;}
+}
+@keyframes burn {
+    50% {opacity:0.8;
+      transform:rotate3d(1,1,0,20deg);}
+}
