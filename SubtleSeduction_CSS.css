@@ -91,15 +91,15 @@ div{
 }
 
 .page-header{
-    //top:0;
+    top:0;
 }
 .page-footer{
-    //bottom: 0;
+    bottom: 0;
 }
 .page-centered{
-    top:12%;
-    display: block;
-    position: absolute;
+    //top:12%;
+    //display: block;
+    //position: absolute;
     
 }
 .float-left{
