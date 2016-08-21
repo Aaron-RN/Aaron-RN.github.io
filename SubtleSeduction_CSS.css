@@ -63,8 +63,6 @@ img{
     display: block;
     //border: 0;
     //margin-bottom:-5px;
-    float:right;
-    clear:none;
     max-width:600px;
     max-height:780px;
     width: 100% !important;
@@ -88,7 +86,7 @@ div{
     height: 1%;
     width: 100%;
     position:absolute;
-    display: block;
+    display: none;
     border: 2px solid rgba(0,0,0,.3);
 }
 
