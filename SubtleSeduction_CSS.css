@@ -45,11 +45,11 @@
 }
 
 html{
-    -ms-text-size-adjust:100%;
-    -webkit-text-size-adjust:100%;
+    //-ms-text-size-adjust:100%;
+    //-webkit-text-size-adjust:100%;
     //line-height:1.5;
-    //overflow-x: hidden;
-    //overflow-y: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 body{
     margin: 0;
@@ -61,8 +61,8 @@ body{
 }
 img{
     display: block;
-    border: 0;
-    margin-bottom:-5px;
+    //border: 0;
+    //margin-bottom:-5px;
     max-width:600px;
     max-height:780px;
     width: 100% !important;
