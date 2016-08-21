@@ -18,12 +18,12 @@
 }
 @font-face {
     font-family: LatoHairline;
-    src: url(Fonts/lato/Lato-Hairline.ttf);
+    src: url(Lato-Hairline.ttf);
 }
 @font-face {
     font-family: LatoHairline;
     font-weight: italic;
-    src: url(Fonts/lato/Lato-Hairline.ttf);
+    src: url(Lato-Hairline.ttf);
 }
 @font-face {
     font-family: LatoLight;
@@ -60,7 +60,7 @@ body{
     //line-height:1.5;
 }
 img{
-    display: inline;
+    display: block;
     border: 0;
     margin-bottom:-5px;
     max-width:600px;
