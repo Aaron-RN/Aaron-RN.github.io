@@ -66,12 +66,12 @@ img{
     max-width:600px;
     max-height:780px;
     width: 100% !important;
-    height: auto !important;
+    height: 100% !important;
 }
 div{
     font-family: LatoHairline;
     font-weight: 500;
-    font-size: 7.1vw;
+    //font-size: 7.1vw;
 }
 
 .text-white{
