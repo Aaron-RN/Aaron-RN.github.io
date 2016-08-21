@@ -1,0 +1,121 @@
+@font-face {
+    font-family: Lato;
+    src: url(Fonts/lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: Lato;
+    font-weight: bold;
+    src: url(Fonts/lato/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: Lato;
+    font-weight: italic;
+    src: url(Fonts/lato/Lato-Italic.ttf);
+}
+@font-face {
+    font-family: LatoBI;
+    src: url(Fonts/lato/Lato-BoldItalic.ttf);
+}
+@font-face {
+    font-family: LatoHairline;
+    src: url(Fonts/lato/Lato-Hairline.ttf);
+}
+@font-face {
+    font-family: LatoHairline;
+    font-weight: italic;
+    src: url(Fonts/lato/Lato-Hairline.ttf);
+}
+@font-face {
+    font-family: LatoLight;
+    src: url(Fonts/lato/Lato-Light.ttf);
+}
+@font-face {
+    font-family: LatoLight;
+    font-weight: italic;
+    src: url(Fonts/lato/Lato-LightItalic.ttf);
+}
+@font-face {
+    font-family: LatoBlack;
+    src: url(Fonts/lato/Lato-Black.ttf);
+}
+@font-face {
+    font-family: LatoBlack;
+    font-weight: italic;
+    src: url(Fonts/lato/Lato-BlackItalic.ttf);
+}
+
+html{
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+    //line-height:1.5;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body{
+    margin: 0;
+    background-image: url("wallpaper.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    //line-height:1.5;
+}
+img{
+    display: inline;
+    border: 0;
+    margin-bottom:-5px;
+    max-width:600px;
+    max-height:780px;
+    width: 100% !important;
+    height: auto !important;
+}
+div{
+    font-family: LatoHairline;
+    font-weight: 500;
+    font-size: 7.1vw;
+}
+
+.text-white{
+    color: white;
+}
+.text-red{
+    color: indianred;
+}
+.bg-red{
+    z-index: 10;
+    background-color: rgba(200,0,0,.3);
+    height: 1%;
+    width: 100%;
+    position:absolute;
+    display: block;
+    border: 2px solid rgba(0,0,0,.3);
+}
+
+.page-header{
+    top:0;
+}
+.page-footer{
+    bottom: 0;
+}
+.page-centered{
+    top:12%;
+    display: block;
+    position: absolute;
+    
+}
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.container:after{
+    content: "";
+    display:table;
+    clear: both;
+}
+
+.container{
+    padding: 0.16em 5.1vw;
+}
