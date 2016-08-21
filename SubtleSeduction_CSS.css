@@ -48,9 +48,8 @@ html{
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%;
     //line-height:1.5;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    width:100%;
+    //overflow-x: hidden;
+    //overflow-y: hidden;
 }
 body{
     margin: 0;
