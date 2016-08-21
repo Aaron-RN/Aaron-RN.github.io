@@ -50,6 +50,7 @@ html{
     //line-height:1.5;
     overflow-x: hidden;
     overflow-y: hidden;
+    width:100%;
 }
 body{
     margin: 0;
