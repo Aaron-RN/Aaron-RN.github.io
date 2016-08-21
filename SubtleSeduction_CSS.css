@@ -84,7 +84,7 @@ div{
     z-index: 10;
     background-color: rgba(200,0,0,.3);
     height: 1%;
-    width: 100vw;
+    width: 100%;
     position:absolute;
     display: block;
     border: 2px solid rgba(0,0,0,.3);
@@ -97,9 +97,9 @@ div{
     bottom: 0;
 }
 .page-centered{
-    //top:12%;
-    //display: block;
-    //position: absolute;
+    top:12%;
+    display: block;
+    position: absolute;
     
 }
 .float-left{
