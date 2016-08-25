@@ -87,6 +87,24 @@
 .text-red{
     color: indianred;
 }
+.text-shadow-white{
+   text-shadow:
+       3px 3px 0 rgba(225,225,225,0.6),
+     -1px -1px 0 rgba(225,225,225,0.6),  
+      1px -1px 0 rgba(225,225,225,0.6),
+      -1px 1px 0 rgba(225,225,225,0.6),
+       1px 1px 0 rgba(225,225,225,0.6);
+}
+
+.text-shadow-red{
+   text-shadow:
+       3px 3px 0 rgba(225,0,0,0.6),
+     -1px -1px 0 rgba(225,0,0,0.6),  
+      1px -1px 0 rgba(225,0,0,0.6),
+      -1px 1px 0 rgba(225,0,0,0.6),
+       1px 1px 0 rgba(225,0,0,0.6);
+}
+
 .text-shadow{
    text-shadow:
        3px 3px 0 #000,
@@ -95,7 +113,6 @@
       -1px 1px 0 #000,
        1px 1px 0 #000;
 }
-
 .bg-red{
     z-index: 10;
     background-color: rgba(200,0,0,.3);
