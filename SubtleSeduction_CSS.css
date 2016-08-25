@@ -89,20 +89,20 @@
 }
 .text-shadow-white{
    text-shadow:
-       3px 3px 0 rgba(225,225,225,0.6),
-     -1px -1px 0 rgba(225,225,225,0.6),  
-      1px -1px 0 rgba(225,225,225,0.6),
-      -1px 1px 0 rgba(225,225,225,0.6),
-       1px 1px 0 rgba(225,225,225,0.6);
+       3px 3px 0 rgba(225,225,225,0.4),
+     -1px -1px 0 rgba(225,225,225,0.4),  
+      1px -1px 0 rgba(225,225,225,0.4),
+      -1px 1px 0 rgba(225,225,225,0.4),
+       1px 1px 0 rgba(225,225,225,0.4);
 }
 
 .text-shadow-red{
    text-shadow:
-       3px 3px 0 rgba(225,0,0,0.6),
-     -1px -1px 0 rgba(225,0,0,0.6),  
-      1px -1px 0 rgba(225,0,0,0.6),
-      -1px 1px 0 rgba(225,0,0,0.6),
-       1px 1px 0 rgba(225,0,0,0.6);
+       3px 3px 0 rgba(225,0,0,0.4),
+     -1px -1px 0 rgba(225,0,0,0.4),  
+      1px -1px 0 rgba(225,0,0,0.4),
+      -1px 1px 0 rgba(225,0,0,0.4),
+       1px 1px 0 rgba(225,0,0,0.4);
 }
 
 .text-shadow{
