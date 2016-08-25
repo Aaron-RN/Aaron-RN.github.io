@@ -56,8 +56,8 @@
 
 @font-face {
     font-family: NewBorou;
-    src: url(Fonts/NEWBOROU.ttf) format('truetype');
-    src: url(Fonts/NEWBOROU.otf) format('opentype');
+    src: url(NEWBOROU.ttf) format('truetype');
+    src: url(NEWBOROU.otf) format('opentype');
 }
 
 @font-face {
