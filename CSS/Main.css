@@ -21,6 +21,10 @@
                 </div>
             </div>
 */
+body
+{
+    font-size: 100%;
+}
 
 .backgroundImg {
     position: absolute;
