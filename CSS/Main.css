@@ -21,15 +21,26 @@
                 </div>
             </div>
 */
+.w3-allerta
+{
+    font-family: "Allerta Stencil", Sans-serif;
+}
+
 body
 {
     font-size: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-#bottom{
-
-    position: fixed; 
-    background:gray; 
+#bottom
+{
+    font-size: 0.75em;
+    font-variant: small-caps;
+    background-color:rgba(25,25,25,0.5);
+    position: relative;
+    margin:0;
     width:100%;
     bottom:0;
 }
