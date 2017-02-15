@@ -26,6 +26,14 @@ body
     font-size: 100%;
 }
 
+#bottom{
+
+    position: fixed; 
+    background:gray; 
+    width:100%;
+    bottom:0;
+}
+
 .backgroundImg {
     position: absolute;
     top: 50%;
