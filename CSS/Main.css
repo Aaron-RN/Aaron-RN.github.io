@@ -33,18 +33,36 @@ body
     padding: 0;
     height: 100%;
 }
-
+.right {
+    padding-left: 1em;
+    margin:2em 0;
+    float: right;
+    width: 40%;
+    height: 2em;
+}
+.rcontent{
+    margin: 0.3em 0;
+}
+.left {
+    overflow: hidden;
+    margin:2em 0;
+    padding-left: 1em;
+    height: 2em;
+    color: rgba(0,0,0,0);
+}
+.horzline {
+    overflow: hidden;
+    margin:1em 0;
+    height: 0.3em;
+    background-color:rgba(100,90,180,0.3);
+    color: rgba(0,0,0,0);
+}
 #bottom
 {
     font-size: 0.75em;
     font-variant: small-caps;
-    background-color:rgba(25,25,25,0.5);
-    //position: relative;
-    //margin:0;
-    //width:100%;
-    //bottom:0;
-    //display: none;
 }
+
 
 .backgroundImg {
     position: absolute;
