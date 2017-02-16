@@ -20,6 +20,15 @@
                     <a style="width:33.33%"class="w3-btn w3-text-dark-grey w3-hover-text-blue w3-hover-black" href="#">Contact</a>
                 </div>
             </div>
+
+<!--
+            <div class="w3-container w3-cell w3-border" style="padding:0;margin:0">
+                <div class="horzline"></div>
+            </div>
+            <div class="w3-container w3-cell w3-border w3-right">
+                <p class="w3-allerta">&copy; Avenii Johnson 2016</p>
+            </div>
+-->
 */
 .w3-allerta
 {
@@ -35,9 +44,9 @@ body
 }
 .right {
     padding-left: 1em;
-    margin:2em 0;
+    padding-right: 2em;
     float: right;
-    width: 40%;
+    width: auto;
     height: 2em;
 }
 .rcontent{
@@ -45,8 +54,7 @@ body
 }
 .left {
     overflow: hidden;
-    margin:2em 0;
-    padding-left: 1em;
+    padding-left: 2em;
     height: 2em;
     color: rgba(0,0,0,0);
 }
@@ -54,7 +62,7 @@ body
     overflow: hidden;
     margin:1em 0;
     height: 0.3em;
-    background-color:rgba(100,90,180,0.3);
+    background-color:rgba(100,90,180,0.2);
     color: rgba(0,0,0,0);
 }
 #bottom
