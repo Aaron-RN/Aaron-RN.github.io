@@ -43,7 +43,7 @@ body
     height: 100%;
 }
 .VerticalCenter{
-    margin-top: 4em; /* -height/2 */
+    margin-top: 3em; /* -height/2 */
 }
 .right {
     padding-left: 1em;
