@@ -38,23 +38,26 @@
 body
 {
     font-size: 100%;
-    margin: 0;
+    margin: auto;
     padding: 0;
     height: 100%;
+    width: 100%;
 }
 .right {
     padding-left: 1em;
     padding-right: 2em;
     float: right;
-    width: auto;
     height: 2em;
 }
 .rcontent{
     margin: 0.3em 0;
 }
 .left {
+    margin: 0 auto;
     overflow: hidden;
     padding-left: 2em;
+    padding-right: 2em;
+    //width: 50%;
     height: 2em;
     color: rgba(0,0,0,0);
 }
