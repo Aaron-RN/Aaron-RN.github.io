@@ -99,6 +99,19 @@ body
     z-index: -1;
 }
 
+
+.backgroundImg-mobile {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    margin-top: -250px; /* Half the height */
+    margin-left: -250px; /* Half the width */
+    opacity:0.2;
+    z-index: -1;
+}
+
 /**Hover Colors**/
 .w3-hover-white-blue:hover
 {
