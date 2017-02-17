@@ -102,10 +102,10 @@ body
 
 .backgroundImg-mobile {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     width: 500px;
-    height: 500px;
+    height: 600px;
     margin-top: -250px; /* Half the height */
     margin-left: -250px; /* Half the width */
     opacity:0.2;
