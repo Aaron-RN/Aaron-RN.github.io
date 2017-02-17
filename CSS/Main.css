@@ -106,6 +106,13 @@ body
     background-color:rgb(230,230,255)!important
 }
 
+.w3-hover-none:hover
+{
+    color:#000!important;
+    background-color:rgba(0,0,0,0.3)!important
+}
+
+
 /**Animations**/
 .w3-animate-top
 {
