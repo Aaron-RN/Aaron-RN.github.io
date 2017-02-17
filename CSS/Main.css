@@ -42,8 +42,11 @@ body
     padding: 0;
     height: 100%;
 }
-.VerticalCenter{
+.VerticalCenter-3{
     margin-top: 3em; /* -height/2 */
+}
+.VerticalCenter-6{
+    margin-top: 4em; /* -height/2 */
 }
 .right {
     padding-left: 1em;
@@ -63,11 +66,18 @@ body
     height: 2em;
     color: rgba(0,0,0,0);
 }
-.horzline {
+.horzline-purple {
     overflow: hidden;
     margin:1em 0;
-    height: 0.3em;
-    background-color:rgba(100,90,180,0.2);
+    height: 0.15em;
+    background-color:rgba(100,90,180,0.25);
+    color: rgba(0,0,0,0);
+}
+.horzline-white
+{
+    margin:1em 0;
+    height: 0.15em;
+    background-color:rgba(255,255,255,0.4);
     color: rgba(0,0,0,0);
 }
 #bottom
@@ -89,6 +99,14 @@ body
     z-index: -1;
 }
 
+/**Hover Colors**/
+.w3-hover-white-blue:hover
+{
+    color:#000!important;
+    background-color:rgb(230,230,255)!important
+}
+
+/**Animations**/
 .w3-animate-top
 {
     position:relative;
