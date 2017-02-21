@@ -1,4 +1,17 @@
 <?php
-    mail('aaron_newbold@hotmail.com', $_POST['name'], $_POST['number'], $_POST['email'], $_POST['message']);
+    if(isset($_POST['submit'])) {
+        $to = "aaron_newbold@hotmail.com";
+        $subject = "Form Avenii.com";
+        $name_field = $_POST['name'];
+        $number_field = $_POST['name'];
+        $email_field = $_POST['email'];
+        $message = $_POST['message'];
+
+        $body = "From: $name_field\n Number: $number_field\n E-Mail: $email_field\n Message:\n $message";
+
+        echo "Data has been submitted to $to!";
+        mail($to, $subject, $body);
+        } else {
+        echo "blarg!";
+    }
 ?>
-<p>Your email has been sent.</p>

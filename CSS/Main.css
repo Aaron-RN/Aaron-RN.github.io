@@ -42,6 +42,9 @@ body
     padding: 0;
     height: 100%;
 }
+.VerticalCenter{
+    margin-top: 1em; /* -height/2 */
+}
 .VerticalCenter-3{
     margin-top: 3em; /* -height/2 */
 }
@@ -80,6 +83,13 @@ body
     background-color:rgba(255,255,255,0.4);
     color: rgba(0,0,0,0);
 }
+.horzline-black
+{
+    margin:1em 0;
+    height: 0.45em;
+    background-color:black;
+    color: rgba(0,0,0,0);
+}
 #bottom
 {
     font-size: 0.75em;
@@ -87,14 +97,22 @@ body
 }
 
 
+/*.backgroundImg
+{
+    background-image: url(../Images/headIllustration.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+*/
 .backgroundImg {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 500px;
     height: 500px;
-    margin-top: -250px; /* Half the height */
-    margin-left: -250px; /* Half the width */
+    margin-top: -250px;
+    margin-left: -250px; 
     opacity:0.2;
     z-index: -1;
 }
@@ -110,6 +128,64 @@ body
     margin-left: -250px; /* Half the width */
     opacity:0.2;
     z-index: -1;
+}
+
+/**Top Page Navigation Menu**/
+.navMenu
+{
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    line-height: 205%;
+    font-weight: 400;
+}
+.w3-white-grey
+{
+    background-color:rgb(225,225,225)!important;
+}
+.w3-hover-white-grey:hover
+{
+    background-color:rgb(225,225,225)!important;
+}
+.w3-sky-blue
+{
+    background-color:rgb(15,170,235);
+}
+.w3-text-sky-blue
+{
+    color:rgb(15,170,235)!important;
+}
+.w3-hover-text-sky-blue:hover
+{
+    color:rgb(15,170,235)!important;
+}
+.w3-border-sky-blue
+{
+    border-color:rgb(15,170,235)!important;
+}
+.about
+{
+    font-weight: 300;
+}
+.FontBold
+{
+    font-weight: 600;
+}
+
+.FirstChar
+{
+    font-weight: 550;
+    font-size: 1.5em;
+    padding-left: 1em;
+}
+.underline
+{
+    text-decoration: underline;
+}
+/**Borders**/
+.w3-leftbar
+{
+    border-color: black!important;
+    border-left: 1.25em solid!important;
 }
 
 /**Hover Colors**/
