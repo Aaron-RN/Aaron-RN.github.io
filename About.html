@@ -9,6 +9,7 @@
         <meta name="keywords" content="Avenii Johnson,Bahamian Artist,Bahamian Designer,Bahamian,Services,Skills,">
         <meta name="author" content="Avenii Johnson">
         <link rel="stylesheet" type="text/css" href="CSS/ResetSheet_CSS.css">
+        <!--<link rel="stylesheet" type="text/css" href="CSS/w3_framework.css">-->
         <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
         <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
         <script src="https://use.fontawesome.com/c307ca9280.js"></script>
@@ -16,29 +17,31 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
         <link rel="stylesheet" type="text/css" href="CSS/Main.css">
     </head>
-    <body class="w3-white" onload="openTabDefault('Who')">
+    <body class="w3-white" onload="BodyOnload()">
         <!--**//Div used to center entire body vertically//** AND **//Shows this page to tablets and largers devices//**-->
         <div class="VerticalCenter w3-hide-small w3-hide-medium" style="padding-left:5em;padding-right:5em;">
         <!--Navigation Menu-->
-        <div class="w3-allerta navMenu" style="font-size:1em;padding-top:1em;padding-bottom:0.5em;">
-            <div class=" w3-cell" style="width:25vw;">
-                <p class="w3-xxlarge w3-slim about" style="text-transform:uppercase;letter-spacing:-4px;">About <br> <span class="w3-text-sky-blue">
+        <div class="w3-cell-row navMenu" style="width:100%;font-size:1em;padding-top:1em;padding-bottom:0.5em;">
+            <div class="w3-container w3-cell" style="width:25vw;line-height:205%;">
+                <p class="about" style="text-transform:uppercase;font-size:2.5vw;letter-spacing:-4px;">About <br> <span class="w3-text-sky-blue">
                     <span class="FontBold">Avenii</span> Johnson</span></p>
             </div>
             <!--Larger Resolution Navigation Menu-->
-            <div class="w3-container w3-center w3-cell w3-btn-group w3-slim" style="width:45vw">
-                <a style="width:30.33%" class="w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="#">Portfolio</a>
-                <a style="width:30.33%"class="w3-button w3-border-left w3-border-right w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="About.html">About</a>
+            <div class="w3-container w3-center w3-cell w3-btn-group" style="width:45vw">
+                <a style="width:30.33%" class="w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="Illustrations.html">Portfolio</a>
+                <a style="width:30.33%"class="w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="About.html">About</a>
                 <a style="width:30.33%"class="w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="Contact.html">Contact</a>
             </div>
-            <div class="w3-container w3-cell w3-slim about w3-text-sky-blue" style="width:30%;font-size:2.5em;">
-                <a href="index.html">
-                <span class="w3-left" style="width:50%;font-size:1.15em;letter-spacing:-4px;text-align:right"><span class="FontBold">Avenii</span> <br> <span style="font-size:20px;letter-spacing:0.2em">Johnson</span></span>
-                <span class="w3-left" style="width:50%;font-size:0.75em"><span style="">Graphic</span> <br> <span class="FontBold" style="letter-spacing:0.125em;border-bottom:0.15em solid rgb(15,170,235);">Artist</span></span>
+            <div class="w3-container w3-cell about w3-text-sky-blue" style="width:30vw;font-size:2.5vw;line-height:70%;">
+                <a style="text-decoration:none" href="index.html">
+                    <span class="FontBold" style="width:25%;font-size:3.6vw;letter-spacing:-4px;">Avenii</span>
+                    <span style="width:25%;font-size:1.75vw;">Graphic</span>
+                    <span style="width:25%;font-size:1.75vw;letter-spacing:0.2em">Johnson</span>
+                    <span class="FontBold" style="width:25%;font-size:1.75vw;letter-spacing:0.2em;border-bottom:0.15em solid rgb(15,170,235);">Artist</span>
                 </a>
             </div>
-            <hr>
         </div>
+        <hr>
         <!--Row with Main Image-->
         <div class="w3-row w3-container w3-leftbar w3-animate-left" style="margin-top:2em;padding-top:1.5em">
             <div class="w3-col w3-center w3-rightbar" style="width:50%;">
@@ -46,7 +49,7 @@
             </div>
             <!--Tabs for Who, Skills and What-->
             <div class="w3-container w3-rest">
-              <div class="w3-cell-row w3-slim" style="text-transform:uppercase;font-size:1.8vw;padding-bottom:2em">
+              <div class="w3-cell-row " style="text-transform:uppercase;font-size:1.8vw;padding-bottom:2em">
                 <a href="javascript:void(0)" onclick="openTab(event, 'Who');">
                   <div id="WhoTab" class="w3-third tablink w3-bottombar w3-btn w3-white w3-hover-dark-grey w3-hover-text-sky-blue w3-padding" style="border-radius: 15px 50px;">Who Am I</div>
                 </a>
@@ -58,7 +61,7 @@
                 </a>
               </div>
 
-              <div id="Who" class="w3-container tabs w3-large w3-slim w3-light-grey w3-rightbar w3-animate-right" style="display:none;border-radius: 15px 50px;padding-bottom:2em">
+              <div id="Who" class="w3-container tabs w3-large  w3-light-grey w3-rightbar w3-animate-right" style="display:none;border-radius: 15px 50px;padding-bottom:2em">
                 <h1 class="w3-center">Who I Am</h1>
                 <p>
                     <p class="w3-white-grey w3-round-xlarge"><span class="FirstChar">I</span> am a graphic designer based in the Bahamas with a love of graffiti and Japanese styled art.</p>
@@ -71,7 +74,7 @@
                 </p>
               </div>
 
-              <div id="What" class="w3-container tabs w3-xlarge w3-slim w3-light-grey w3-rightbar w3-animate-right" style="display:none;border-radius: 15px 50px;padding-bottom:2em">
+              <div id="What" class="w3-container tabs w3-xlarge  w3-light-grey w3-rightbar w3-animate-right" style="display:none;border-radius: 15px 50px;padding-bottom:2em">
                 <h1>What I Do</h1>
                 <ul class="w3-ul">
                     <li class="w3-hover-white-grey w3-round-xlarge">Logo Design</li>
@@ -81,7 +84,7 @@
                 </ul> 
               </div>
 
-              <div id="Skills" class="w3-container tabs w3-xlarge w3-slim w3-light-grey w3-rightbar w3-animate-right" style="display:none;border-radius: 15px 50px;padding-bottom:2em">
+              <div id="Skills" class="w3-container tabs w3-xlarge  w3-light-grey w3-rightbar w3-animate-right" style="display:none;border-radius: 15px 50px;padding-bottom:2em">
                 <h1>My Skills</h1>
                 <ul class="w3-ul">
                     <li class="w3-hover-white-grey w3-round-xlarge">Adobe Photoshop</li>
@@ -94,35 +97,86 @@
 
         <!--Footer Items-->
         <footer class="w3-row" id="bottom">
-            <div class="right w3-allerta"><div class="rcontent w3-text-sky-blue" style="margin-right:15em;">&copy; Avenii Johnson 2016</div></div>
+            <div class="right"><div class="rcontent w3-text-sky-blue" style="margin-right:15em;">&copy; Avenii Johnson 2016</div></div>
             <div class="left"><div class="horzline-black" style="margin-left:10em;">-</div></div>
         </footer>
         </div>
         
         <!--**//Shows mobile devices this page//**-->
-        <div class="w3-hide-large">
-        <!--Row with Main Centered Image-->
-        <div class="w3-row w3-center w3-animate-left">
-            <img class="w3-animate-opacity" style="max-width:85%;" src="Images/headIllustration.png" alt="Avenii Johnson Head Drawing" />
-        </div>
-
-        <!--Row with Second Centered Image (Designer Name)-->
-        <div class="w3-row w3-center w3-animate-right">
-            <img class="w3-animate-opacity" style="max-width:90%" src="Images/AJGA.png" alt="Avenii Johnson Graphic Designer" />
-        </div>
-
-        <div class="w3-row w3-allerta" style="font-size:1em;padding-top:1em;padding-bottom:0.5em;">
+        <div class="w3-hide-large w3-leftbar">
+            
+        <!--Row with Centered Image (Designer Name)-->
+        <div class="w3-row w3-container w3-center w3-animate-left" style="padding-top:1em">
+            <img class="w3-animate-opacity" style="max-width:80%;" src="Images/AJGA-black.png" alt="Avenii Johnson Head Drawing" />
+        </div>    
+            
+        <!--Navigation Menu-->
+        <div class="w3-row" style="font-size:0.75em;padding-top:1em">
             <!--Smaller Resolution Navigation Menu-->
-            <div class="w3-btn-group w3-center w3-hide-large">
-                <a style="width:36%" class="w3-btn w3-text-dark-grey w3-hover-text-blue w3-hover-black" href="#">Portfolio</a>
-                <a style="width:32%"class="w3-btn w3-border-left w3-border-right w3-text-dark-grey w3-hover-text-blue w3-hover-black" href="#">About</a>
-                <a style="width:32%"class="w3-btn w3-text-dark-grey w3-hover-text-blue w3-hover-black" href="Contact.html">Contact</a>
+            <div class="w3-btn-group w3-center navMenu">
+                <a style="width:34%" class="w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="Illustrations.html">Portfolio</a>
+                <a style="width:28%"class="w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="About.html">About</a>
+                <a style="width:28%"class="w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="Contact.html">Contact</a>
             </div>
         </div>
+        <hr>
+
+        <!--Row with Main Image-->
+        <div class="w3-row w3-container w3-center w3-animate-left" style="padding-top:1em">
+            <img class="w3-bottombar w3-round-xxlarge w3-animate-opacity" style="max-width:60%;" src="Images/aboutHead.png" alt="Avenii Johnson Head Drawing" />
+        </div>
+            
+        <!--Tabs for Who, Skills and What-->
+        <div class="w3-container w3-row" style="padding-top:1em;">
+            <a href="javascript:void(0)" onclick="openTab(event, 'MWho');">
+                <div id="MWhoTab" class="w3-row tablink w3-bottombar w3-bar w3-btn w3-white w3-hover-dark-grey w3-hover-text-sky-blue w3-padding" style="text-transform:uppercase;border-radius: 15px 50px;">Who Am I</div>
+            </a>
+            <div id="MWho" class="w3-container tabs w3-light-grey w3-rightbar w3-animate-right" style="display:none;border-radius: 15px 50px;padding-bottom:2em;margin-top:1em">
+                <h2 class="w3-center">Who I Am</h2>
+                <p>
+                    <p class="w3-white-grey w3-round-xlarge"><span class="FirstChar">I</span> am a graphic designer based in the Bahamas with a love of graffiti and Japanese styled art.</p>
+                    <br> 
+                    <p class="w3-round-xlarge"><span class="FirstChar">M</span>y works often include straight lines, bright colors, and ‘clean’ (symmetrical) designs.</p> 
+                    <br> 
+                    <p class="w3-white-grey w3-round-xlarge"><span class="FirstChar">I</span>'ve studied Fine Arts and Graphic Design in Boston at the School of the Museum of Fine Arts (SMFA) and the New England Institute of Art.</p> 
+                    <br> 
+                    <p class="w3-round-xlarge"><span class="FirstChar">S</span>ome of my works include designs created for Compass Point Beach Resort, the Beast Mode fight team and many other local and international companies.</p>
+                </p>
+            </div>
+        </div>
+        <div class="w3-container w3-row">
+            <a href="javascript:void(0)" onclick="openTab(event, 'MWhat');">
+                <div class="w3-row tablink w3-bottombar w3-bar w3-btn w3-white w3-hover-dark-grey w3-hover-text-sky-blue w3-padding" style="text-transform:uppercase;border-radius: 50px 50px 15px 15px;">What I do</div>
+            </a>
+            <div id="MWhat" class="w3-container tabs w3-large  w3-light-grey w3-rightbar w3-animate-right" style="display:none;border-radius: 15px 50px;padding-bottom:2em;margin-top:1em">
+                <h2>What I Do</h2>
+                <ul class="w3-ul">
+                    <li class="w3-hover-white-grey w3-round-xlarge">Logo Design</li>
+                    <li class="w3-hover-white-grey w3-round-xlarge">Photo Editing</li>
+                    <li class="w3-hover-white-grey w3-round-xlarge">Illustrations</li>
+                    <li class="w3-hover-white-grey w3-round-xlarge">Promotional Designs</li>            
+                </ul> 
+            </div>
+        </div>
+        <div class="w3-container w3-row">
+            <a href="javascript:void(0)" onclick="openTab(event, 'MSkills');">
+                <div class="w3-row tablink w3-bottombar w3-bar w3-btn w3-white w3-hover-dark-grey w3-hover-text-sky-blue w3-padding" style="text-transform:uppercase;border-radius: 50px 15px;">My Skills</div>
+            </a>
+            <div id="MSkills" class="w3-container tabs w3-large  w3-light-grey w3-rightbar w3-animate-right" style="display:none;border-radius: 15px 50px;padding-bottom:2em;margin-top:1em">
+                <h2>My Skills</h2>
+                <ul class="w3-ul">
+                    <li class="w3-hover-white-grey w3-round-xlarge">Adobe Photoshop</li>
+                    <li class="w3-hover-white-grey w3-round-xlarge">Adobe Illustrator</li>
+                    <li class="w3-hover-white-grey w3-round-xlarge">Adobe InDesign</li>
+                </ul>
+            </div>
+        </div>
+   
+
         <!--Footer Items-->
         <footer id="bottom">
-            <div class="right w3-allerta"><div class="rcontent">&copy; Avenii Johnson 2016</div></div>
-            <div class="left"><div class="horzline-purple">-</div></div>
+            <div class="right"><div class="rcontent">&copy; Avenii Johnson 2016</div></div>
+            <div class="left"><div class="horzline-black">-</div></div>
         </footer>
         </div>
     </body>
