@@ -45,15 +45,117 @@ body
     height: 100%;
 }
 
-.w3-modal{
+.aa-modal{
+    position:fixed;
+    display: none;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    top:0;
+    left:0;
+    //overflow: auto;
+    background-color: rgb(0,0,0);
     background-color:rgba(0,0,0,0.8);
 }
+
+.aa-modal-content{
+    margin: auto;
+    padding:25px;
+    outline:0;
+    border: 1px solid #888;
+    background-color: white;
+    width: auto;
+}
+.aa-modal-content-portrait{
+    margin: auto;
+    padding:25px;
+    outline:0;
+    border: 1px solid #888;
+    background-color: white;
+    width: auto;
+    height: 90%;
+}
+.aa-modal-content-landscape{
+    margin: auto;
+    padding:25px;
+    outline:0;
+    border: 1px solid #888;
+    background-color: white;
+    width: auto;
+    height: auto;
+}
+@media only screen and (max-width: 768px) {
+    .aa-modal-content{
+        margin: auto;
+        padding:10px;
+        outline:0;
+        border: 1px solid #888;
+        background-color: white;
+        width: auto;
+        height: auto;
+    }
+    .aa-modal-content-landscape{
+        margin: auto;
+        padding:10px;
+        outline:0;
+        border: 1px solid #888;
+        background-color: white;
+        width: 100%;
+        height: auto;
+    }
+    .aa-modal-content-portrait{
+        margin: auto;
+        padding:10px;
+        outline:0;
+        border: 1px solid #888;
+        background-color: white;
+        width: 50%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .aa-modal-content{
+        margin: auto;
+        padding:10px;
+        outline:0;
+        border: 1px solid #888;
+        background-color: white;
+        width: 100%;
+        height: auto;
+    }
+    .aa-modal-content-portrait{
+        margin: auto;
+        padding:10px;
+        outline:0;
+        border: 1px solid #888;
+        background-color: white;
+        width: 85%;
+        height: auto;
+    }
+}
+.w3-closebtn{
+    float: right;
+}
+
 .Center{
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-animation:animateCenter 1s;
+    animation:animateCenter 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    //transform: translate(-50%, -50%);
 }
+
+.PageSlideLeft{
+    -webkit-animation:animateSlideLeft 1s;
+    animation:animateSlideLeft 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
 .VerticalCenter{
     margin-top: 1em; /* -height/2 */
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
@@ -152,13 +254,39 @@ body
     opacity:0.2;
     z-index: -1;
 }
-
+/*.backgroundAbout
+{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image:url('http://powellong.com/data/wallpapers/5/WDF_538712.jpg');
+    //background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    //opacity: 0.2;
+}*/
 /**Top Page Navigation Menu**/
 .navMenu
 {
     text-transform: uppercase;
     letter-spacing: -0.5px;
     font-weight: 400;
+}
+.text-shadow
+{
+    text-shadow: 2px 2px 12px black;
+}
+.w3-no-color
+{
+    background-color: rgba(0,0,0,0)!important;
+}
+.w3-no-color:hover
+{
+    background-color: rgba(0,0,0,0)!important;
 }
 .w3-text-no-color
 {
@@ -255,6 +383,16 @@ body
 {from{-webkit-transform:scale(1.1)} to{-webkit-transform:scale(1)}}
 @keyframes animatezoomout
 {from{transform:scale(1.1)} to{transform:scale(1)}}
+
+@-webkit-keyframes animateCenter
+{to{-webkit-transform:translate(-50%, -50%)}}
+@keyframes animateCenter
+{to{transform:translate(-50%, -50%)}}
+
+@-webkit-keyframes animateSlideLeft
+{to{-webkit-transform:translate(-100%)}}
+@keyframes animateSlideLeft
+{to{transform:translate(-100%)}}
 
 .w3-animate-top
 {
