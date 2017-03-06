@@ -63,12 +63,12 @@ function PageSlideLeft(e, link)
     link = e.currentTarget.getAttribute("href");
     FadeTo("body",1,0);
     //page.className+=" PageSlideLeft";
-    var i = 10;
+    var i = 1;
     setInterval(function()
-                {page.style.right=i + "px";
+                {page.style.right=i + "%";
                  //console.log(page.style.right);
-                 i+=10;
-                 if(i>=1500){window.location.href=link;};
+                 i+=1;
+                 if(i>=100){window.location.href=link;};
                 }, 1);
 }
 
