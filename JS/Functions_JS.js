@@ -64,11 +64,12 @@ function PageSlideLeft(e, link)
     FadeTo("body",1,0);
     //page.className+=" PageSlideLeft";
     var i = 1;
-    setInterval(function()
+    var loop = setInterval(function()
                 {page.style.right=i + "%";
                  //console.log(page.style.right);
                  i+=1;
-                 if(i>=100){window.location.href=link;};
+                 if(i>=100)
+                 {window.location.href=link;clearInterval(loop);};
                 }, 1);
 }
 
