@@ -45,95 +45,7 @@ body
     height: 100%;
 }
 
-.aa-modal{
-    position:fixed;
-    display: none;
-    z-index: 3;
-    width: 100%;
-    height: 100%;
-    padding-top: 5%;
-    top:0;
-    left:0;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color:rgba(0,0,0,0.8);
-}
 
-.aa-modal-content{
-    margin: auto;
-    padding:25px;
-    outline:0;
-    border: 1px solid #888;
-    background-color: white;
-    width: auto;
-}
-.aa-modal-content-portrait{
-    margin: auto;
-    padding:25px;
-    outline:0;
-    border: 1px solid #888;
-    background-color: white;
-    width: auto;
-    height: 90%;
-}
-.aa-modal-content-landscape{
-    margin: auto;
-    padding:25px;
-    outline:0;
-    border: 1px solid #888;
-    background-color: white;
-    width: auto;
-    height: auto;
-}
-@media only screen and (max-width: 768px) {
-    .aa-modal-content{
-        margin: auto;
-        padding:10px;
-        outline:0;
-        border: 1px solid #888;
-        background-color: white;
-        width: auto;
-        height: auto;
-    }
-    .aa-modal-content-landscape{
-        margin: auto;
-        padding:10px;
-        outline:0;
-        border: 1px solid #888;
-        background-color: white;
-        width: 100%;
-        height: auto;
-    }
-    .aa-modal-content-portrait{
-        margin: auto;
-        padding:10px;
-        outline:0;
-        border: 1px solid #888;
-        background-color: white;
-        width: 50%;
-        height: auto;
-    }
-}
-@media only screen and (max-width: 700px) {
-    .aa-modal-content{
-        margin: auto;
-        padding:10px;
-        outline:0;
-        border: 1px solid #888;
-        background-color: white;
-        width: 100%;
-        height: auto;
-    }
-    .aa-modal-content-portrait{
-        margin: auto;
-        padding:10px;
-        outline:0;
-        border: 1px solid #888;
-        background-color: white;
-        width: 85%;
-        height: auto;
-    }
-}
 .w3-closebtn{
     float: right;
 }
@@ -245,12 +157,8 @@ body
 
 .backgroundImg-mobile {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 500px;
-    height: 500px;
-    margin-top: -250px; /* Half the height */
-    margin-left: -250px; /* Half the width */
+    width: 95%;
+    height: auto;
     opacity:0.2;
     z-index: -1;
 }
@@ -353,6 +261,98 @@ body
 {
     color:white!important;
     background-color:rgba(0,0,0,0.3)!important
+}
+
+
+/*Custom Modal*/
+.aa-modal{
+    position:fixed;
+    display: none;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    top:0;
+    left:0;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color:rgba(0,0,0,0.8);
+}
+
+.aa-modal-content{
+    margin: auto;
+    padding:25px;
+    outline:0;
+    border: 1px solid #888;
+    background-color: white;
+    width: auto;
+}
+.aa-modal-content-portrait{
+    margin: auto;
+    padding:25px;
+    outline:0;
+    border: 1px solid #888;
+    background-color: white;
+    width: auto;
+    height: 90%;
+}
+.aa-modal-content-landscape{
+    margin: auto;
+    padding:25px;
+    outline:0;
+    border: 1px solid #888;
+    background-color: white;
+    width: auto;
+    height: auto;
+}
+@media only screen and (max-width: 768px) {
+    .aa-modal-content{
+        margin: auto;
+        padding:10px;
+        outline:0;
+        border: 1px solid #888;
+        background-color: white;
+        width: auto;
+        height: auto;
+    }
+    .aa-modal-content-landscape{
+        margin: auto;
+        padding:10px;
+        outline:0;
+        border: 1px solid #888;
+        background-color: white;
+        width: 100%;
+        height: auto;
+    }
+    .aa-modal-content-portrait{
+        margin: auto;
+        padding:10px;
+        outline:0;
+        border: 1px solid #888;
+        background-color: white;
+        width: 50%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .aa-modal-content{
+        margin: auto;
+        padding:10px;
+        outline:0;
+        border: 1px solid #888;
+        background-color: white;
+        width: 100%;
+        height: auto;
+    }
+    .aa-modal-content-portrait{
+        margin: auto;
+        padding:10px;
+        outline:0;
+        border: 1px solid #888;
+        background-color: white;
+        width: 85%;
+        height: auto;
+    }
 }
 
 
