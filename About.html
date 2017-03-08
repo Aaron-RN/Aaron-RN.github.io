@@ -21,31 +21,39 @@
         <!--**//Div used to center entire body vertically//** AND **//Shows this page to tablets and largers devices//**-->
         <div class="VerticalCenter w3-hide-small w3-hide-medium" style="padding-left:5em;padding-right:5em;">
         <!--Navigation Menu-->
-        <div class="w3-cell-row navMenu" style="width:100%;font-size:1em;padding-top:1em;padding-bottom:0.5em;">
-            <div class="w3-container w3-cell" style="width:25vw;line-height:205%;">
-                <p class="about" style="text-transform:uppercase;font-size:2.5vw;letter-spacing:-4px;">About <br> <span class="w3-text-sky-blue">
-                    <span class="FontBold">Avenii</span> Johnson</span></p>
+        <div class="w3-row navMenu" style="font-size:1em;padding-top:1em;padding-bottom:0.5em;">
+            <div class="w3-container w3-col" style="width:25vw;line-height:205%;">
+                <p class="about" style="text-transform:uppercase;font-size:2.5vw;letter-spacing:-4px;">
+                    About 
+                    <br> 
+                    <span class="w3-text-sky-blue"><span class="FontBold w3-text-sky-blue">Avenii</span> Johnson</span>
+                </p>
             </div>
             <!--Larger Resolution Navigation Menu-->
-            <div class="w3-container w3-center w3-cell w3-btn-group" style="width:45vw">
+            <div class="w3-container w3-center w3-col w3-btn-group" style="width:35vw;">
                 <a style="width:30.33%" class="w3-button w3-text-dark-grey w3-hover-text-blue w3-no-color" href="Illustrations.html">Portfolio</a>
                 <a style="width:30.33%"class="w3-button w3-border-left w3-border-right w3-text-dark-grey w3-hover-text-blue w3-no-color" href="About.html">About</a>
                 <a style="width:30.33%"class="w3-button w3-text-dark-grey w3-hover-text-blue w3-no-color" href="Contact.html">Contact</a>
             </div>
-            <div class="w3-container w3-cell about w3-text-sky-blue" style="width:30vw;font-size:2.5vw;line-height:70%;">
+            <div class="w3-container w3-col about w3-text-sky-blue" style="width:25vw;font-size:2.5vw;">
                 <a style="text-decoration:none" href="index.html">
-                    <span class="FontBold" style="width:25%;font-size:3.6vw;letter-spacing:-4px;">Avenii</span>
-                    <span style="width:25%;font-size:1.75vw;">Graphic</span>
-                    <span style="width:25%;font-size:1.75vw;letter-spacing:0.2em">Johnson</span>
-                    <span class="FontBold" style="width:25%;font-size:1.75vw;letter-spacing:0.2em;border-bottom:0.15em solid rgb(15,170,235);">Artist</span>
+                    <div class="right" style="width:4em;padding-left:0.5em;line-height:0.63em;">
+                        <span style="font-size:2.15vw;padding-bottom:1.8em;">Graphic</span>
+                        <span class="FontBold" style="font-size:2.15vw;letter-spacing:0.26em;border-bottom:0.15em solid rgb(15,170,235);">Artist</span>
+                    </div>
+                    <div class="right" style="width:4em;line-height:70%;">
+                        <span class="FontBold" style="font-size:3.6vw;letter-spacing:-4px;">Avenii</span>
+                        <span style="font-size:1.75vw;letter-spacing:0.17em">Johnson</span>
+                    </div>
                 </a>
             </div>
         </div>
         <hr>
         <!--Row with Main Image-->
-        <div class="w3-row w3-container w3-leftbar w3-animate-left" style="margin-top:2em;padding-top:1.5em;">
-            <div class="w3-col w3-center w3-rightbar" style="width:50%;">
+        <div class="w3-row w3-container w3-leftbar w3-animate-left " style="margin-top:2em;padding-top:1.5em;">
+            <div class="w3-col w3-center w3-rightbar backgroundAbout" style="width:50%;">
                 <img class="w3-animate-opacity" style="max-width:100%;" src="Images/aboutHead.png" alt="Avenii Johnson Head Drawing" />
+<!--                <img class="w3-animate-opacity" style="max-width:100%;position:absolute;left:15em;z-index:-1;" src="Images/aboutHead-outline.png" alt="Avenii Johnson Head Drawing Outline" />-->
             </div>
             <!--Tabs for Who, Skills and What-->
             <div class="w3-container w3-rest">
@@ -61,7 +69,7 @@
                 </a>
               </div>
 
-              <div id="Who" class="w3-container tabs w3-large  w3-light-grey w3-rightbar w3-animate-right" style="display:none;border-radius: 15px 50px;padding-bottom:2em">
+              <div id="Who" class="w3-container tabs w3-large w3-light-grey w3-rightbar w3-animate-right" style="display:none;border-radius: 15px 50px;padding-bottom:2em">
                 <h1 class="w3-center">Who I Am</h1>
                 <p>
                     <p class="w3-white-grey w3-round-xlarge"><span class="FirstChar">I</span> am a graphic designer based in the Bahamas with a love of graffiti and Japanese styled art.</p>
@@ -108,7 +116,7 @@
         <!--Row with Centered Image (Designer Name)-->
         <a href="index.html">
             <div class="w3-row w3-container w3-center w3-animate-left" style="padding-top:1em">
-                <img class="w3-animate-opacity" style="max-width:80%;" src="Images/AJGA-black.png" alt="Avenii Johnson Head Drawing" />
+                <img class="w3-animate-opacity" style="max-width:80%;" src="Images/AJGA-black.png" alt="Avenii Johnson Graphic Artist" />
             </div>    
         </a> 
          <!--About (Page Title)-->
@@ -122,16 +130,16 @@
         <div class="w3-row" style="font-size:0.75em;padding-top:1em">
             <!--Smaller Resolution Navigation Menu-->
             <div class="w3-btn-group w3-center navMenu">
-                <a style="width:34%" class="w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="Illustrations.html">Portfolio</a>
-                <a style="width:28%"class="w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="About.html">About</a>
-                <a style="width:28%"class="w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="Contact.html">Contact</a>
+                <a style="width:36.33%;padding-left:4em;" class="w3-btn w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="Illustrations.html">Portfolio</a>
+                <a style="width:30.33%;"class="w3-btn w3-border-left w3-border-right w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="About.html">About</a>
+                <a style="width:33.33%;padding-right:4em;"class="w3-btn w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="Contact.html">Contact</a>
             </div>
         </div>
         <hr>
 
         <!--Row with Main Image-->
         <div>
-            <div class="w3-row w3-container w3-center w3-animate-left" style="padding-top:1em">
+            <div class="w3-row w3-container w3-center w3-animate-left backgroundAboutMobile" style="padding-top:1em">
                 <img class="w3-bottombar w3-round-xxlarge w3-animate-opacity" style="max-width:60%;" src="Images/aboutHead.png" alt="Avenii Johnson Head Drawing" />
             </div>
             

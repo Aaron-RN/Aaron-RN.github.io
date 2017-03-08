@@ -1,3 +1,7 @@
+window.page = document.querySelector("body");
+window.onload = function(){
+    page.className = page.className.replace("preload","");
+};
 
 function ScrollToBottom()
 {
@@ -56,7 +60,7 @@ var PageLinks = document.querySelectorAll(".Link");
 for(var i=0;i<PageLinks.length;i++){
     PageLinks[i].addEventListener("click",PageSlideLeft,false);
 }
-window.page = document.querySelector("body");
+
 function PageSlideLeft(e, link)
 {
     e.preventDefault();
