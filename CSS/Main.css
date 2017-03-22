@@ -6,15 +6,15 @@
 
 @font-face {
     font-family: BebasNeueBook;
-    src: url(fonts/bebas_neue/bebasneuebook.ttf) format('truetype');
-    src: url(fonts/bebas_neue/bebasneuebook.otf) format('opentype');
-    src: url(fonts/bebas_neue/bebasneuebook.woff) format('woff');
+    src: url(fonts/bebas_neue/BebasNeueBook.ttf) format('truetype');
+    src: url(fonts/bebas_neue/BebasNeueBook.otf) format('opentype');
+    src: url(fonts/bebas_neue/BebasNeueBook.woff) format('woff');
 }
 @font-face {
     font-family: BebasNeueThick;
-    src: url(fonts/bebas_neue/bebasneue.ttf) format('truetype');
-    src: url(fonts/bebas_neue/bebasneue.otf) format('opentype');
-    src: url(fonts/bebas_neue/bebasneue.woff) format('woff');
+    src: url(fonts/bebas_neue/BebasNeue.ttf) format('truetype');
+    src: url(fonts/bebas_neue/BebasNeue.otf) format('opentype');
+    src: url(fonts/bebas_neue/BebasNeue.woff) format('woff');
 }
 
 .w3-allerta
