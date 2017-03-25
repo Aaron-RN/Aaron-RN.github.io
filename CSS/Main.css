@@ -6,15 +6,15 @@
 
 @font-face {
     font-family: BebasNeueBook;
-    src: url(Fonts/bebas_neue/BebasNeueBook.ttf) format('truetype');
-    src: url(Fonts/bebas_neue/BebasNeueBook.otf) format('opentype');
-    src: url(Fonts/bebas_neue/BebasNeueBook.woff) format('woff');
+    src: url(fonts/bebas_neue/bebasneuebook.ttf) format('truetype');
+    src: url(fonts/bebas_neue/bebasneuebook.otf) format('opentype');
+    src: url(fonts/bebas_neue/bebasneuebook.woff) format('woff');
 }
 @font-face {
     font-family: BebasNeueThick;
-    src: url(Fonts/bebas_neue/BebasNeue.ttf) format('truetype');
-    src: url(Fonts/bebas_neue/BebasNeue.otf) format('opentype');
-    src: url(Fonts/bebas_neue/BebasNeue.woff) format('woff');
+    src: url(fonts/bebas_neue/bebasneue.ttf) format('truetype');
+    src: url(fonts/bebas_neue/bebasneue.otf) format('opentype');
+    src: url(fonts/bebas_neue/bebasneue.woff) format('woff');
 }
 
 .w3-allerta
@@ -115,6 +115,13 @@ body
     background-color:rgba(255,255,255,0.4);
     color: rgba(0,0,0,0);
 }
+.horzline-grey
+{
+    margin:1em 0;
+    height: 0.45em;
+    background-color:dimgrey;
+    color: rgba(0,0,0,0);
+}
 .horzline-black
 {
     margin:1em 0;
@@ -196,7 +203,7 @@ body
 .navMenu
 {
     text-transform: uppercase;
-    //letter-spacing: -0.5px;
+    letter-spacing: 1px;
     //font-weight: 400;
 }
 .text-shadow
@@ -245,7 +252,7 @@ body
 }
 .FontBold
 {
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .FirstChar
@@ -259,10 +266,13 @@ body
     text-decoration: underline;
 }
 /**Borders**/
-.w3-leftbar
+.aa-leftbar
 {
-    border-color: black!important;
     border-left: 1.25em solid!important;
+}
+.aa-leftbar-grey
+{
+    border-left: 0.5em solid dimgrey!important;
 }
 
 /**Hover Colors**/
