@@ -317,11 +317,23 @@ function SelectTile(e,listToSearch)
                 }
                 shipSelected.hp -=1;
                 ModalContent.innerHTML="<img class='splash' src='images/explosion1.gif'>";
-                snd_Hit.play();
+                var playPromise = snd_Hit.play();
+                if(playPromise!==undefined)
+                {
+                    playPromise.then(function() {
+                    }).catch(function(error) {
+                    });
+                }
                 if(!runOnDmg)
                 {
                     ModalContent.innerHTML="<img class='splash' src='images/explosion1.gif'>";
-                    snd_Hit.play();
+                    var playPromise = snd_Hit.play();
+                    if(playPromise!==undefined)
+                    {
+                        playPromise.then(function() {
+                        }).catch(function(error) {
+                        });
+                    }
                     shipSelected.objRef.style.backgroundColor="rgb(25,25,25)";
                     shipSelected.objRef.removeEventListener("click", SelectTile,false);
                 }
@@ -356,7 +368,13 @@ function SelectTile(e,listToSearch)
             {
                 //Modal.style.display="block";
                 ModalContent.innerHTML="<img class='splash' src='images/waterSplashGood.gif'>";
-                snd_Miss.play();          
+                var playPromise = snd_Miss.play();
+                if(playPromise!==undefined)
+                {
+                    playPromise.then(function() {
+                    }).catch(function(error) {
+                    });
+                }
                 if(WhosTurn=="Player"){EnemyConsole.innerHTML+="<span class='Miss'>Miss!<hr></span>";}
                 if(WhosTurn=="Enemy"){PlayerConsole.innerHTML+="<span class='Miss'>Enemy Misses!<hr></span>";}
                 tileSelected.style.backgroundColor="rgba(100,100,100,0.6)";
@@ -479,8 +497,15 @@ function GameOver()
         {
             gameOver=true;
             var rand = Math.floor(Math.random() * (2 - 1 + 1)) + 1;
-            if(rand==1){snd_music_fail.play();}
-            if(rand==2){snd_music_fail2.play();}
+            var playPromise;
+            if(rand==1){playPromise = snd_music_fail.play();}
+            if(rand==2){playPromise = snd_music_fail2.play();}
+            if(playPromise!==undefined)
+            {
+                playPromise.then(function() {
+                }).catch(function(error) {
+                });
+            }
             Modal.classList.remove("fade");
             Modal.classList.add("fadein");
             Modal.style.display="block";
