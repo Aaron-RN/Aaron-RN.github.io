@@ -1,6 +1,6 @@
 //Sounds
 var snd_gui_open = new Audio('sounds/gui_open.wav');
-var snd_fire = new Audio('../sounds/fx_fire.ogg');
+var snd_fire = new Audio('sounds/fx_fire.ogg');
 var snd_fire2 = new Audio('sounds/fx_fire2.ogg');
 var snd_fire3 = new Audio('sounds/fx_fire3.ogg');
 var snd_Hit = new Audio('sounds/fx_shipHit.wav');
