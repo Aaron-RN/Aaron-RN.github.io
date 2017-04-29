@@ -1,6 +1,6 @@
 //Sounds
 var snd_gui_open = new Audio('sounds/gui_open.wav');
-var snd_fire = new Audio('sounds/fx_fire.ogg');
+var snd_fire = new Audio('/sounds/fx_fire.ogg');
 var snd_fire2 = new Audio('sounds/fx_fire2.ogg');
 var snd_fire3 = new Audio('sounds/fx_fire3.ogg');
 var snd_Hit = new Audio('sounds/fx_shipHit.wav');
@@ -340,8 +340,15 @@ function SelectTile(e,listToSearch)
                 if(shipSelected.hp<=0&&!shipSelected.destroyed)
                     {
                         var rand2 = Math.floor(Math.random() * (2 - 1 + 1)) + 1;
-                        if(rand2==1){snd_shipDestroyed.play();}
-                        if(rand2==2){snd_shipDestroyed2.play();}
+                        var playPromise;
+                        if(rand2==1){playPromise = snd_shipDestroyed.play();}
+                        if(rand2==2){playPromise = snd_shipDestroyed2.play();}
+                        if(playPromise!==undefined)
+                        {
+                            playPromise.then(function() {
+                            }).catch(function(error) {
+                            });
+                        }
                         ModalContent.innerHTML="<img class='splash' src='images/HitLargeTest.gif'>";
                         shipSelected.objRef.style.backgroundColor="rgb(25,25,25)";
                         shipSelected.destroyed=true;
