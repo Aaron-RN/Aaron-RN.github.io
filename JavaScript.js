@@ -178,7 +178,16 @@ function SwitchTurns()
             Modal.classList.add("fade");
             Modal.style.display="block";
             ModalContent.innerHTML="<p class='glowText'>Round:"+TurnsTaken+"</p><p class='glowText'>Player's Turn<p>"
-            snd_gui_open.play();
+            var playPromise = snd_gui_open.play();
+            if(playPromise!==undefined)
+                {
+                  playPromise.then(function() {
+                    // Automatic playback started!
+                  }).catch(function(error) {
+                    // Automatic playback failed.
+                    // Show a UI element to let the user manually start playback.
+                  });
+                }
             setTimeout(CloseModal, 2000);
             
             
@@ -192,7 +201,13 @@ function SwitchTurns()
         Modal.classList.add("fade");
         Modal.style.display="block";
         ModalContent.innerHTML="<p class='glowText'>Round:"+TurnsTaken+"</p><p class='glowText'>Enemy's Turn<p>"
-        snd_gui_open.play();
+        var playPromise = snd_gui_open.play();
+        if(playPromise!==undefined)
+            {
+                playPromise.then(function() {
+                }).catch(function(error) {
+                });
+            }
         setTimeout(CloseModal, 2000);
     }
 }
@@ -230,9 +245,16 @@ function SelectTile(e,listToSearch)
     setTimeout(function(){CloseModal(true);}, 5000);
     //This occurs in line with the firing animation of the cannon
     setTimeout(function(){
-        if(rand==1){snd_fire.play();}
-        if(rand==2){snd_fire2.play();}
-        if(rand==3){snd_fire3.play();}
+        var playPromise;
+        if(rand==1){playPromise=snd_fire.play();}
+        if(rand==2){playPromise=snd_fire2.play();}
+        if(rand==3){playPromise=snd_fire3.play();}
+        if(playPromise!==undefined)
+        {
+            playPromise.then(function() {
+            }).catch(function(error) {
+            });
+        }
         Page.classList.add("shake");
         Modal.classList.add("flash");
     },500);
