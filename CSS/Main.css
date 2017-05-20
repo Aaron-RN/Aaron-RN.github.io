@@ -1,0 +1,359 @@
+
+/*         
+                <span class="w3-left" style="width:50%;font-size:1.15em;letter-spacing:-4px;text-align:right"><span class="FontBold">Avenii</span> <br> <span style="font-size:20px;letter-spacing:0.2em">Johnson</span></span>
+                <span class="w3-left" style="width:50%;font-size:0.75em"><span class="">Graphic</span> <br> <span class="FontBold" style="letter-spacing:0.125em;border-bottom:0.15em solid rgb(15,170,235);">Artist</span></span>
+*/
+
+@font-face {
+    font-family: BebasNeueBook;
+    src: url(Fonts/bebas_neue/BebasNeueBook.ttf) format('truetype');
+    src: url(Fonts/bebas_neue/BebasNeueBook.otf) format('opentype');
+    src: url(Fonts/bebas_neue/BebasNeueBook.woff) format('woff');
+}
+@font-face {
+    font-family: BebasNeueThick;
+    src: url(Fonts/bebas_neue/BebasNeue.ttf) format('truetype');
+    src: url(Fonts/bebas_neue/BebasNeue.otf) format('opentype');
+    src: url(Fonts/bebas_neue/BebasNeue.woff) format('woff');
+}
+
+.w3-allerta
+{
+    font-family: "Allerta Stencil", Sans-serif;
+}
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+
+body
+{
+    font-size: 100%;
+    //font-family: 'BebasNeue';
+    margin: auto;
+    padding: 0;
+    height: 100%;
+}
+
+
+.w3-closebtn{
+    float: right;
+}
+
+.Center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-animation:animateCenter 0.5s;
+    animation:animateCenter 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    //transform: translate(-50%, -50%);
+}
+
+.PageSlideLeft{
+    -webkit-animation:animateSlideLeft 1s;
+    animation:animateSlideLeft 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.VerticalCenter{
+    margin-top: 1em; /* -height/2 */
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
+.VerticalCenter-3{
+    margin-top: 3em; /* -height/2 */
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
+.VerticalCenter-6{
+    margin-top: 4em; /* -height/2 */
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
+.BebasNeue
+{
+    font-family: 'BebasNeueBook';
+    font-weight: 400;
+}
+.BebasNeueThick
+{
+    font-family: 'BebasNeueThick';
+}
+.right {
+    //padding-left: 1em;
+    padding-right: 2em;
+    float: right;
+    height: 2em;
+}
+.rcontent{
+    margin: 0.3em 0;
+    font-size: 1.5em;
+}
+.left {
+    margin: 0 auto;
+    overflow: hidden;
+    padding-left: 2em;
+    padding-right: 2em;
+    //width: 50%;
+    height: 2em;
+    color: rgba(0,0,0,0);
+}
+.horzline-purple {
+    overflow: hidden;
+    margin:1em 0;
+    height: 0.15em;
+    background-color:rgba(100,90,180,0.25);
+    color: rgba(0,0,0,0);
+}
+.horzline-white
+{
+    margin:1em 0;
+    height: 0.15em;
+    background-color:rgba(255,255,255,0.4);
+    color: rgba(0,0,0,0);
+}
+.horzline-grey
+{
+    margin:1em 0;
+    height: 0.45em;
+    background-color:dimgrey;
+    color: rgba(0,0,0,0);
+}
+.horzline-black
+{
+    margin:1em 0;
+    height: 0.45em;
+    background-color:black;
+    color: rgba(0,0,0,0);
+}
+
+.horzline-black-2
+{
+    margin:1em 0;
+    height: 0.125em;
+    background-color:black;
+    color: rgba(0,0,0,0);
+}
+#bottom
+{
+    font-size: 0.75em;
+    font-variant: small-caps;
+}
+
+
+/*.backgroundImg
+{
+    background-image: url(../Images/headIllustration.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+*/
+.backgroundImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -250px; 
+    opacity:0.2;
+    z-index: -1;
+}
+
+
+.backgroundImg-mobile {
+    position: absolute;
+    width: 95%;
+    height: auto;
+    opacity:0.2;
+    z-index: -1;
+}
+.backgroundAbout{
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position: 90% 60%;
+    background-image:url(../Images/aboutHead-outline.png);
+}
+.backgroundAboutMobile{
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position: 60% 100%;
+    background-image:url(../Images/aboutHead-outline.png);
+}
+/*.backgroundAbout
+{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image:url('http://powellong.com/data/wallpapers/5/WDF_538712.jpg');
+    //background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    //opacity: 0.2;
+}*/
+/**Top Page Navigation Menu**/
+.navMenu
+{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    //font-weight: 400;
+}
+.text-shadow
+{
+    text-shadow: 2px 2px 12px black;
+}
+.w3-no-color
+{
+    background-color: rgba(0,0,0,0)!important;
+}
+.w3-no-color:hover
+{
+    background-color: rgba(0,0,0,0)!important;
+}
+.w3-text-no-color
+{
+    color:rgba(0,0,0,0)!important;
+}
+.w3-white-grey
+{
+    background-color:rgb(225,225,225)!important;
+}
+.w3-hover-white-grey:hover
+{
+    background-color:rgb(225,225,225)!important;
+}
+.w3-sky-blue
+{
+    background-color:rgb(15,170,235);
+}
+.w3-text-sky-blue
+{
+    color:rgb(15,170,235)!important;
+}
+.w3-hover-text-sky-blue:hover
+{
+    color:rgb(15,170,235)!important;
+}
+.w3-border-sky-blue
+{
+    border-color:rgb(15,170,235)!important;
+}
+.about
+{
+    font-weight: 300;
+}
+.FontBold
+{
+    font-weight: 800;
+}
+
+.FirstChar
+{
+    font-weight: 550;
+    font-size: 1.5em;
+}
+.underline
+{
+    text-decoration: underline;
+}
+/**Borders**/
+.aa-leftbar
+{
+    border-left: 1.25em solid!important;
+}
+.aa-leftbar-grey
+{
+    border-left: 0.5em solid dimgrey!important;
+}
+
+/**Hover Colors**/
+.w3-hover-white-blue:hover
+{
+    color:#000!important;
+    background-color:rgb(230,230,255)!important
+}
+
+.w3-btn-no-color
+{
+    color:white!important;
+    background-color:rgba(0,0,0,0.3)!important
+}
+
+
+
+/**Animations**/
+
+.animate-zoom-hover
+{
+    -webkit-animation:animatezoomout 0.6s;
+    -webkit-animation-fill-mode: forwards;
+    animation:animatezoomout 0.6s;
+    animation-fill-mode: forwards;
+}
+
+.animate-zoom-hover:hover
+{
+    -webkit-animation:animatezoomin 0.6s;
+    -webkit-animation-fill-mode: forwards;
+    animation:animatezoomin 0.6s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animatezoomin
+{from{-webkit-transform:scale(1)} to{-webkit-transform:scale(1.1)}}
+@keyframes animatezoomin
+{from{transform:scale(1)} to{transform:scale(1.1)}}
+
+@-webkit-keyframes animatezoomout
+{from{-webkit-transform:scale(1.1)} to{-webkit-transform:scale(1)}}
+@keyframes animatezoomout
+{from{transform:scale(1.1)} to{transform:scale(1)}}
+
+@-webkit-keyframes animateCenter
+{to{-webkit-transform:translate(-50%, -50%)}}
+@keyframes animateCenter
+{to{transform:translate(-50%, -50%)}}
+
+@-webkit-keyframes animateSlideLeft
+{to{-webkit-transform:translate(-100%)}}
+@keyframes animateSlideLeft
+{to{transform:translate(-100%)}}
+
+.w3-animate-top
+{
+    position:relative;
+    -webkit-animation:animatetop 1s;
+    animation:animatetop 1s;
+}
+.w3-animate-left
+{
+    position:relative;
+    -webkit-animation:animateleft 1s;
+    animation:animateleft 1s;
+}
+
+.w3-animate-right
+{
+    position:relative;
+    -webkit-animation:animateright 1s;
+    animation:animateright 1s;
+}
+.w3-animate-bottom
+{
+    position:relative;
+    -webkit-animation:animatebottom 1s;
+    animation:animatebottom 1s;
+}
+.w3-animate-opacity
+{
+    -webkit-animation:opac 2.5s;
+    animation:opac 2.5s;
+}
