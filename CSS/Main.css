@@ -39,6 +39,31 @@ body
 }
 
 
+@media (max-width: 160em) and (min-width:120em) {
+    .w3-hide-xlarge{
+        display:none!important;
+    }    
+    .w3-show-xlarge{
+        display:block!important;
+    }
+}
+
+@media (max-width: 120em) and (min-width:120em) {
+    .w3-responsive-center{
+        padding-left:20em!important;
+        padding-right:20em!important;
+    }
+}    
+@media (max-width: 160em) and (min-width:160em) {
+    .w3-responsive-center{
+        padding-left:40em!important;
+        padding-right:40em!important;
+    }
+}
+
+
+
+
 .w3-closebtn{
     float: right;
 }
@@ -63,7 +88,19 @@ body
 
 .VerticalCenter{
     margin-top: 1em; /* -height/2 */
-    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    
+    @media only screen and (max-width: 64em) {
+        margin: 0 8%;
+    }
+
+    @media only screen and (max-width: 85.375em) {
+        margin: 0 12%;
+    }
+
+    @media only screen and (max-width: 120em) {
+        margin: 0 18%;
+    }
 }
 .VerticalCenter-3{
     margin-top: 3em; /* -height/2 */
@@ -89,7 +126,7 @@ body
     height: 2em;
 }
 .rcontent{
-    margin: 0.3em 0;
+    //margin: 0.3em 0;
     font-size: 1.5em;
 }
 .left {

@@ -39,7 +39,7 @@
     width: 70%;
     height: auto;
 }
-@media only screen and (max-width: 768px) and (orientation: portrait) {
+@media only screen and (max-width: 48em) and (orientation: portrait) {
     .aa-modal-content{
         margin: auto;
         padding:10px;
@@ -68,7 +68,7 @@
         height: auto;
     }
 }
-@media only screen and (max-width: 700px) and (orientation: portrait){
+@media only screen and (max-width: 43.75em) and (orientation: portrait){
     .aa-modal-content{
         margin: auto;
         padding:10px;
@@ -89,7 +89,7 @@
     }
 }
 
-@media only screen and (max-width: 768px) and (orientation: landscape) {
+@media only screen and (max-width: 48em) and (orientation: landscape) {
     .aa-modal-content{
         margin: auto;
         padding:10px;
@@ -97,7 +97,7 @@
         border: 1px solid #888;
         background-color: white;
         width: auto;
-        height: 100%;
+        height: auto;
     }
     .aa-modal-content-landscape{
         margin: auto;
@@ -115,10 +115,10 @@
         border: 1px solid #888;
         background-color: white;
         width: auto;
-        height: 100%;
+        height: auto;
     }
 }
-@media only screen and (max-width: 700px) and (orientation: landscape){
+@media only screen and (max-width: 43.75em) and (orientation: landscape){
     .aa-modal-content{
         margin: auto;
         padding:10px;
