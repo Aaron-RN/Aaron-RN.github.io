@@ -39,7 +39,7 @@ body
 }
 
 
-@media (max-width: 160em) and (min-width:120em) {
+@media (min-width:120em) {
     .w3-hide-xlarge{
         display:none!important;
     }    
