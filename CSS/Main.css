@@ -48,7 +48,7 @@ body
     }
 }
 
-@media (max-width: 120em) and (min-width:120em) {
+@media (max-width: 159em) and (min-width:120em) {
     .w3-responsive-center{
         padding-left:20em!important;
         padding-right:20em!important;
