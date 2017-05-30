@@ -25,7 +25,7 @@
                 <button class="w3-btn" style="width:20%;cursor:default;"></button>
                 <a style="width:20%" class="w3-btn w3-hover-text-blue w3-no-color" href="Illustrations.html">Portfolio</a>
                 <a style="width:20%"class="w3-btn w3-hover-text-blue w3-hover-black w3-border-left w3-border-right w3-no-color" href="About.html">About</a>
-                <a style="width:20%"class="w3-btn w3-hover-text-blue w3-no-color" href="Contact.html">Contact</a>
+                <a style="width:20%"class="w3-btn w3-hover-text-blue w3-no-color" href="Contact.php">Contact</a>
                 <button class="w3-btn" style="width:20%;cursor:default;"></button>
             </div>
         </div>
@@ -157,7 +157,7 @@
             <div class="w3-btn-group w3-center navMenu BebasNeue">
                 <a style="width:33.33%" class="w3-btn w3-hover-text-blue w3-btn-no-color" href="Illustrations.html">Portfolio</a>
                 <a style="width:33.33%"class="w3-btn w3-border-left w3-border-right w3-hover-text-blue w3-btn-no-color" href="About.html">About</a>
-                <a style="width:33.33%"class="w3-btn w3-hover-text-blue w3-btn-no-color" href="Contact.html">Contact</a>
+                <a style="width:33.33%"class="w3-btn w3-hover-text-blue w3-btn-no-color" href="Contact.php">Contact</a>
             </div>
         </div>
             
@@ -191,7 +191,7 @@
             </div>
             <!--Row with Contact Form-->
             <div class="w3-container w3-half w3-animate-right w3-justify BebasNeue" style="magin:0 auto;padding:1px;">
-                <form action="mailto:aaron_newbold@hotmail.com" method="post" enctype="text/plain" class="w3-card-4 w3-light-grey w3-round-xlarge w3-padding" style="opacity:0.9;">
+                <form action="PHP/Email.php" method="post" class="w3-card-4 w3-light-grey w3-round-xlarge w3-padding" style="opacity:0.9;">
                     <div class="w3-row w3-section">
                         <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
                         <div class="w3-rest">
