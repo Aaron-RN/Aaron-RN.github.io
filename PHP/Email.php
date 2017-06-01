@@ -9,7 +9,7 @@
         $email_field = $_POST['email'];
         $email_field = htmlspecialchars($email_field);
         
-        $to = "aaron_newbold@hotmail.com";
+        $to = "info@avenii.com";
         $subject = "$name_field (Contact Request)";
         $message = $_POST['message'];
         $message = htmlspecialchars($message);
@@ -37,7 +37,7 @@
         ";
 
         mail($to, $subject, $body, implode("\r\n", $headers));
-        header('Location: \\Contact.php');
+        header('Location: \\Contact.html');
         //$alert_msg = "Data has been submitted to $to!";
         //echo "<script type='text/javascript'>alert('$alert_msg');</script>";
         } else {

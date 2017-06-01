@@ -16,22 +16,19 @@
         <link rel="stylesheet" type="text/css" href="CSS/Main.css">
     </head>
     <body class="w3-black">
-        <!--**//Div used to center entire body vertically//** AND **//Shows this page to tablets and largers devices//**-->
-        <div class="VerticalCenter w3-hide-small">
+        <!--**//Div used to center entire body vertically//** AND **//Shows this page to all screen sizes 1920x1080 and above//**-->
+        <div class="VerticalCenter w3-responsive-center w3-hide-small w3-hide-large w3-hide-medium w3-show-xlarge">
         <!--Navigation Menu-->
-        <div class="w3-row" style="font-size:1.3em;padding-top:2em;">
+        <div class="w3-row w3-center" style="font-size:1.3em;padding-top:2em;">
             <!--Larger Resolution Navigation Menu-->
-            <div class="w3-btn-group w3-center navMenu BebasNeue">
-                <button class="w3-btn" style="width:20%;cursor:default;"></button>
+            <div class="w3-center navMenu BebasNeue">
                 <a style="width:20%" class="w3-btn w3-hover-text-blue w3-no-color" href="Illustrations.html">Portfolio</a>
-                <a style="width:20%"class="w3-btn w3-hover-text-blue w3-hover-black w3-border-left w3-border-right w3-no-color" href="About.html">About</a>
-                <a style="width:20%"class="w3-btn w3-hover-text-blue w3-no-color" href="Contact.php">Contact</a>
-                <button class="w3-btn" style="width:20%;cursor:default;"></button>
+                <a style="width:10%;border-color:rgb(70,70,70) !important;"class="w3-btn w3-hover-text-blue w3-hover-black w3-border-left w3-border-right w3-no-color" href="About.html">About</a>
+                <a style="width:20%"class="w3-btn w3-hover-text-blue w3-no-color" href="Contact.html">Contact</a>
             </div>
         </div>
-        <div class="VerticalCenter-6">
         <!--Row with Centered Image (Designer Name)-->
-        <div class="w3-row w3-container w3-center" style="padding-top:0.5em">
+        <div class="w3-row w3-container w3-center" style="padding-top:4em">
             <a href="index.html"><img class="w3-animate-left" style="max-width:100%" src="Images/AJGA.png" alt="Avenii Johnson Graphic Designer" /></a>
         </div>
             <!--For Large Sized Browsers-->
@@ -44,13 +41,13 @@
                         Contact Me:
                     </p>
                     <p style="font-size:1.2em;">
-                        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i> info@avenii.com
+                        <img style="max-width:100%" src="Images/Email-icon.png" alt="Contact Icon" /> info@avenii.com
                     </p>
                     <p style="font-size:1.2em;">
-                        <i class="fa fa-phone fa-2x" aria-hidden="true"></i> (242) 432-9316
+                        <img style="max-width:100%" src="Images/Telephone-Icon.png" alt="Telephone Icon" /> 1 (242) 810-4846
                     </p>
                     <p class="w3-hover-text-blue" style="font-size:1.2em;">
-                        <a style="text-decoration:none;" href="https://www.instagram.com/avenii.j/"><i class="fa fa-camera fa-2x" aria-hidden="true"></i> follow me</a>
+                        <a style="text-decoration:none;" href="https://www.instagram.com/avenii.j/"><img style="max-width:100%" src="Images/Instagram-Icon.png" alt="Instagram Icon" /> follow me</a>
                     </p>
                 </div>
             </div>
@@ -87,27 +84,54 @@
             <div class="w3-container w3-quarter"></div>
         </div>
 
-            <!--For Medium Sized Browsers-->
+        <!--Background Centered Image-->
+        <div class="w3-center backgroundImg">
+            <img class="w3-animate-opacity" style="width:100%;" src="Images/headIllustration.png" alt="Avenii Johnson Head Drawing" />
+        </div>
+        <!--Footer Items-->
+        <footer class="w3-row" id="bottom" style="padding-top:1.5em;">
+            <div class="w3-col" style="width:75%;padding-left:20em;"><div class="horzline-white">-</div></div>
+            <div class="w3-rest" style="padding-left:1em;"><div class="rcontent BebasNeueThick" >&copy; Avenii Johnson 2016</div></div>
+        </footer>
+        </div>
+ 
+<!--*****************//Shows to all screen sizes below 1920x1080//***************************************************************************-->
+        <div class="VerticalCenter w3-hide-small w3-hide-medium w3-hide-xlarge" style="padding-left:0em;padding-right:0em;">
+        <!--Navigation Menu-->
+        <div class="w3-row w3-center" style="font-size:1.3em;padding-top:2em;">
+            <!--Larger Resolution Navigation Menu-->
+            <div class="w3-center navMenu BebasNeue">
+                <a style="width:20%" class="w3-btn w3-hover-text-blue w3-no-color" href="Illustrations.html">Portfolio</a>
+                <a style="width:10%;border-color:rgb(70,70,70) !important;"class="w3-btn w3-hover-text-blue w3-hover-black w3-border-left w3-border-right w3-no-color" href="About.html">About</a>
+                <a style="width:20%"class="w3-btn w3-hover-text-blue w3-no-color" href="Contact.html">Contact</a>
+            </div>
+        </div>
+        <!--Row with Centered Image (Designer Name)-->
+        <div class="w3-row w3-container w3-center" style="padding-top:4em">
+            <a href="index.html"><img class="w3-animate-left" style="max-width:100%" src="Images/AJGA.png" alt="Avenii Johnson Graphic Designer" /></a>
+        </div>
+            <!--For Large Sized Browsers-->
         <!--Row with Contact Me Information -->
-        <div class="w3-row w3-center w3-hide-large" style="width:100%;margin:0 auto;margin-top:5em;">
-            <div class="w3-container w3-half w3-animate-left w3-justify" style="padding-left:12.5em;">
+        <div class="w3-row w3-center w3-hide-medium" style="width:100%;margin:0 auto;margin-top:2.5em;">
+            <div class="w3-container w3-quarter"></div>
+            <div class="w3-container w3-quarter w3-animate-left w3-justify" style="padding-left:4em;">
                 <div class="BebasNeueThick">
-                    <p class="w3-text-light-blue w3-xlarge" style="padding-left:1.3em;">
+                    <p class="w3-text-light-blue w3-xlarge" style="padding-left:1.5em;">
                         Contact Me:
                     </p>
                     <p style="font-size:1.2em;">
-                        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i> info@avenii.com
+                        <img style="max-width:100%" src="Images/Email-icon.png" alt="Contact Icon" /> info@avenii.com
                     </p>
                     <p style="font-size:1.2em;">
-                        <i class="fa fa-phone fa-2x" aria-hidden="true"></i> (242) 432-9316
+                        <img style="max-width:100%" src="Images/Telephone-Icon.png" alt="Telephone Icon" /> 1 (242) 810-4846
                     </p>
                     <p class="w3-hover-text-blue" style="font-size:1.2em;">
-                        <a style="text-decoration:none;" href="https://www.instagram.com/avenii.j/"><i class="fa fa-camera fa-2x" aria-hidden="true"></i> follow me</a>
+                        <a style="text-decoration:none;" href="https://www.instagram.com/avenii.j/"><img style="max-width:100%" src="Images/Instagram-Icon.png" alt="Instagram Icon" /> follow me</a>
                     </p>
                 </div>
             </div>
             <!--Row with Contact Form-->
-            <div class="w3-container w3-half w3-animate-right w3-justify BebasNeue FontBold" style="padding-right:2em;">
+            <div class="w3-container w3-quarter w3-animate-right w3-justify BebasNeue FontBold" style="padding-right:0.1em;">
                 <form action="PHP/Email.php" method="post" class="w3-card-4 w3-grey w3-round-xlarge w3-padding" style="opacity:0.8;">
                     <div class="w3-row w3-section">
                         <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
@@ -135,29 +159,109 @@
                     </div>
                     <input type="submit" value="Send" name="Submit" class="w3-btn-block w3-border-2 w3-hover-blue w3-round-xlarge">
                 </form>
-            </div>   
+            </div>
+            <div class="w3-container w3-quarter"></div>
         </div>
+
         <!--Background Centered Image-->
         <div class="w3-center backgroundImg">
             <img class="w3-animate-opacity" style="width:100%;" src="Images/headIllustration.png" alt="Avenii Johnson Head Drawing" />
         </div>
         <!--Footer Items-->
-        <footer id="bottom">
-            <div class="right w3-allerta"><div class="rcontent BebasNeueThick" style="margin-right:15em;">&copy; Avenii Johnson 2016</div></div>
-            <div class="left"><div class="horzline-white" style="margin-left:15em;">-</div></div>
+        <footer class="w3-row" id="bottom" style="padding-top:1.5em;">
+            <div class="w3-col" style="width:75%;padding-left:20em;"><div class="horzline-white">-</div></div>
+            <div class="w3-rest" style="padding-left:1em;"><div class="rcontent BebasNeueThick" >&copy; Avenii Johnson 2016</div></div>
         </footer>
         </div>
+ 
+        <!--**//Shows tablet sized mobile devices this page//**-->
+        <div class="w3-hide-xlarge w3-hide-large w3-hide-small">         
+        <!--Navigation Menu-->
+        <div class="w3-row" style="font-size:0.95em;padding-top:2em">
+            <!--Medium Resolution Navigation Menu-->
+            <div class="w3-btn-group w3-center navMenu BebasNeue">
+                <a style="width:33.33%" class="w3-btn w3-hover-text-blue w3-btn-no-color" href="Illustrations.html">Portfolio</a>
+                <a style="width:33.33%"class="w3-btn w3-border-left w3-border-right w3-hover-text-blue w3-btn-no-color" href="About.html">About</a>
+                <a style="width:33.33%"class="w3-btn w3-hover-text-blue w3-btn-no-color" href="Contact.html">Contact</a>
+            </div>
+        </div>
+            
+        <!--Background Centered Image-->
+        <div class="w3-row w3-center backgroundImg-mobile">
+            <img class="w3-animate-opacity" style="max-width:90%" src="Images/headIllustration.png" alt="Avenii Johnson Head Drawing" />
+        </div>
+            
+        <!--Row with Centered Image (Designer Name)-->
+        <div class="w3-row w3-container w3-center" style="padding-top:44px;">
+            <a href="index.html"><img class="w3-animate-left" style="max-width:95%" src="Images/AJGA.png" alt="Avenii Johnson Graphic Designer" /></a>
+        </div>
+
+        <!--Row with Contact Me Information-->
+        <div class="w3-row w3-center" style="width:100%;margin:0 auto;margin-top:2em;">
+            <div class="w3-container w3-half w3-animate-left w3-justify" style="padding-left:10em;">
+                <div class="BebasNeueThick">
+                    <p class="w3-text-light-blue w3-xlarge" style="padding-left:1.5em;">
+                        Contact Me:
+                    </p>
+                    <p style="font-size:1.2em;">
+                        <img style="max-width:100%" src="Images/Email-icon.png" alt="Contact Icon" /> info@avenii.com
+                    </p>
+                    <p style="font-size:1.2em;">
+                        <img style="max-width:100%" src="Images/Telephone-Icon.png" alt="Telephone Icon" /> 1 (242) 810-4846
+                    </p>
+                    <p class="w3-hover-text-blue" style="font-size:1.2em;">
+                        <a style="text-decoration:none;" href="https://www.instagram.com/avenii.j/"><img style="max-width:100%" src="Images/Instagram-Icon.png" alt="Instagram Icon" /> follow me</a>
+                    </p>
+                </div>
+            </div>
+                 <!--Row with Contact Form-->
+            <div class="w3-container w3-half w3-animate-right w3-justify BebasNeue" style="magin:0 auto;padding-right:8em;">
+                <form action="PHP/Email.php" method="post" class="w3-card-4 w3-light-grey w3-round-xlarge w3-padding" style="opacity:0.9;">
+                    <div class="w3-row w3-section">
+                        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+                        <div class="w3-rest">
+                            <input class="w3-input w3-round-xlarge w3-hover-light-grey" type="text" name="name" placeholder="Name" maxlength="18" required>
+                        </div>
+                    </div>
+                    <div class="w3-row w3-section">
+                        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+                        <div class="w3-rest">
+                            <input class="w3-input w3-round-xlarge w3-hover-light-grey" type="tel" name="number" placeholder="(xxx-xxx-xxxx) or (xxxxxxxxxx)" pattern="\d{3}\d{3}\d{4}|\d{3}[\-]\d{3}[\-]\d{4}" required>
+                        </div>
+                    </div>
+                    <div class="w3-row w3-section">
+                        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope"></i></div>
+                        <div class="w3-rest">
+                            <input class="w3-input w3-round-xlarge w3-hover-light-grey" type="email" name="email" placeholder="Email" maxlength="35" required>
+                        </div>
+                    </div>
+                    <div class="w3-row w3-section">
+                        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-comment"></i></div>
+                        <div class="w3-rest">
+                            <textarea class="w3-input w3-round-xlarge w3-hover-light-grey" name="message" placeholder="Message" rows="3" maxlength="100" required></textarea>
+                        </div>
+                    </div>
+                    <button class="w3-btn-block w3-border-2 w3-hover-blue w3-round-xlarge">Send</button></p>
+                </form>
+            </div>   
+        </div>
+
+        <!--Footer Items-->
+        <footer id="bottom">
+            <div class="right w3-allerta"><div class="rcontent BebasNeueThick">&copy; Avenii Johnson 2016</div></div>
+            <div class="left"><div class="horzline-white">-</div></div>
+        </footer>
         </div>
     
         <!--**//Shows mobile devices this page//**-->
-        <div class="w3-hide-large w3-hide-medium">         
+        <div class="w3-hide-xlarge w3-hide-large w3-hide-medium">         
         <!--Navigation Menu-->
         <div class="w3-row" style="font-size:0.95em;padding-top:2em">
             <!--Smaller Resolution Navigation Menu-->
             <div class="w3-btn-group w3-center navMenu BebasNeue">
                 <a style="width:33.33%" class="w3-btn w3-hover-text-blue w3-btn-no-color" href="Illustrations.html">Portfolio</a>
                 <a style="width:33.33%"class="w3-btn w3-border-left w3-border-right w3-hover-text-blue w3-btn-no-color" href="About.html">About</a>
-                <a style="width:33.33%"class="w3-btn w3-hover-text-blue w3-btn-no-color" href="Contact.php">Contact</a>
+                <a style="width:33.33%"class="w3-btn w3-hover-text-blue w3-btn-no-color" href="Contact.html">Contact</a>
             </div>
         </div>
             
@@ -182,7 +286,7 @@
                         <i class="fa fa-envelope fa-2x" aria-hidden="true"></i> info@avenii.com
                     </p>
                     <p style="font-size:1.1em;">
-                        <i class="fa fa-phone fa-2x" aria-hidden="true"></i> (242) 432-9316
+                        <i class="fa fa-phone fa-2x" aria-hidden="true"></i> 1 (242) 810-4846
                     </p>
                     <p class="w3-butn w3-hover-text-blue" style="font-size:1.1em;">
                         <a style="text-decoration:none;" href="https://www.instagram.com/avenii.j/"><i class="fa fa-camera fa-2x" aria-hidden="true"></i> follow me</a>
