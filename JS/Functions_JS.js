@@ -3,6 +3,10 @@ window.onload = function(){
     page.className = page.className.replace("preload","");
 };
 
+document.addEventListener("dragstart",function(){event.preventDefault();});
+document.addEventListener("contextmenu",function(){event.preventDefault();});
+
+
 function ScrollToBottom()
 {
     window.scrollTo(0, document.body.scrollHeight || document.documentElement.scrollHeight);
