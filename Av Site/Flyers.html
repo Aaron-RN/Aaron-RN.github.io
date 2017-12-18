@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html class lang="en">
+    <head>
+        <title>Avenii Johnson - Graphic Artist</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="About Avenii Johnson">
+        <meta name="keywords" content="Avenii Johnson,Bahamian Artist,Bahamian Designer,Bahamian,Services,Skills,">
+        <meta name="author" content="Avenii Johnson">
+        <link rel="stylesheet" type="text/css" href="CSS/ResetSheet_CSS.css">
+        <!--<link rel="stylesheet" type="text/css" href="CSS/w3_framework.css">-->
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://use.fontawesome.com/c307ca9280.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+        <link rel="stylesheet" type="text/css" href="CSS/Main.css">
+        <link rel="stylesheet" type="text/css" href="CSS/Modal.css">
+    </head>
+    <body class="w3-white w3-animate-right preload">
+        <!--**//Div used to center entire body vertically//** AND **//Shows this page to all screen sizes 1920x1080 and above//**-->
+        <div class="VerticalCenter w3-responsive-center w3-hide-small w3-hide-medium w3-hide-large w3-show-xlarge">
+        <!--Navigation Menu-->
+        <div class="w3-cell-row navMenu BebasNeue" style="width:100%;font-size:1em;padding-top:1em;padding-bottom:0.5em;">
+            <div class="w3-container w3-cell" style="width:25vw;line-height:205%;">
+                <p class="w3-xxlarge about" style="text-transform:uppercase;">
+                    <span class="FontBold" style="letter-spacing:10px;">Portfolio</span>
+                    <br> 
+                    <span class="w3-text-orange" style="letter-spacing:2px;">Flyers</span></p>
+            </div>
+            <!--Larger Resolution Navigation Menu-->
+            <div class="w3-center w3-cell w3-btn-group w3-large" style="width:45vw">
+                <div style="width:30.33%" class="w3-dropdown-hover w3-white">
+                    <span class="w3-button w3-white">Portfolio <i class="fa fa-bars" aria-hidden="true"></i></span>
+                    <div class="w3-dropdown-content w3-border">
+                        <a class="Link w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="Illustrations.html">Illustrations</a>
+                        <a class="Link w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="Logos.html">Logos</a>
+                        <a class="Link w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="Flyers.html">Flyers</a>
+                    </div>
+                </div>
+                <a style="width:30.33%"class="w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="About.html">About</a>
+                <a style="width:30.33%"class="w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="Contact.html">Contact</a>
+            </div>
+            <div class="w3-container w3-cell about w3-text-black" style="width:30vw;font-size:2.5vw;vertical-align:top;">
+                <a style="text-decoration:none" href="index.html">
+<!--
+                    <div class="right" style="width:4em;padding-left:0em;line-height:0.73em;">
+                        <span style="font-size:2.25vw;letter-spacing:0.17em;">Graphic</span>
+                        <span class="FontBold" style="font-size:2.35vw;letter-spacing:0.26em;border-bottom:0.15em solid rgb(250,170,80);border-radius:5px 5px;">Artist</span>
+                    </div>
+                    <div class="right" style="width:4em;padding-left:0.7em;line-height:0.93em;">
+                        <span class="FontBold" style="font-size:3.25vw;letter-spacing:3px;">Avenii</span>
+                        <span style="font-size:2vw;letter-spacing:0.17em;">Johnson</span>
+                    </div>
+-->
+                    <img class="w3-animate-opacity" style="max-width:100%;" src="Images/AJGA-yellow.png" alt="Avenii Johnson Graphic Artist" />
+                </a>
+            </div>
+        </div>
+        <hr>
+            
+        <!--Section with Images-->
+        <div class="w3-container aa-leftbar">
+            <!--First Row with Four Images-->
+            <div class="w3-row-padding w3-margin-top" style="width:100%;">
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/xxi.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/Avenue-thumbnail.jpg" alt="XXI Avenue" />
+                </div>
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/woman.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/Bomac-Cage-Fights-2-thumbnail.jpg" alt="BOMAC The Revenge" />
+                </div>
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/BOMAC.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/Bomac-the-Revenge-thumbnail.jpg" alt="BOMAC Cage Fights" />
+                </div>
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" 
+                     onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/Beast-Mode.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/Yves-Edwards-thumbnail.jpg" alt="MMA Beast Mode" />
+                </div>
+            </div>
+            
+            <!--Second Row with Four Images-->
+            <div class="w3-row-padding w3-margin-top">
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/Chilli.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/Chilli-Cook-Out-Thumbnail.jpg" alt="Chilli Cook Out" />
+                </div>
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/Rico.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/Rico-Farington-Thumbnail.jpg" alt="Rico Farington" />
+                </div>
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" 
+                     onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/Sparta.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/Sparta-Flyer-Thumbnail.jpg" alt="Sparta" />
+                </div>
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" 
+                     onclick="ShowImageModal_Landscape('Images/Portfolio/Flyers/Bahama-Mama.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/TonAsh-Flyer-Tumbnail.jpg" alt="TonAsh Bahama Mama Launch Party Flyer" />
+                </div>
+            </div>
+            
+            <!--Third Row with Four Images-->
+            <div class="w3-row-padding w3-margin-top">
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" 
+                     onclick="ShowImageModal_Landscape('Images/Portfolio/Flyers/MAVS-Flyer.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/MAVS-Flyer-thumbnail.jpg" alt="MAVS" />
+                </div>
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" 
+                     onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/House-Party-MCK.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/Crib-and-Chill-Thumbnail.jpg" alt="Crib and Chill" />
+                </div>
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" 
+                     onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/Tech-Gadgets-Flyer-i7.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/Tech-Gadgets-Flyer-i7-thumbnail.jpg" alt="Tech Gadgets" />
+                </div>
+            </div>
+        </div>
+            
+        <!--Footer Items-->
+        <footer class="w3-row" id="bottom">
+            <div class="w3-col" style="width:75%;"><div class="horzline-black">-</div></div>
+            <div class="w3-rest" style="padding-left:1em;"><div class="rcontent w3-text-orange BebasNeueThick" >&copy; Avenii Johnson 2016</div></div>
+        </footer>
+        </div>
+
+<!--*****************//Shows to all screen sizes below 1920x1080//***************************************************************************-->
+        <div class="VerticalCenter w3-hide-small w3-hide-medium w3-hide-xlarge" style="padding-left:5em;padding-right:5em;">
+        <!--Navigation Menu-->
+        <div class="w3-cell-row navMenu BebasNeue" style="width:100%;font-size:1em;padding-top:1em;padding-bottom:0.5em;">
+            <div class="w3-container w3-cell" style="width:25vw;line-height:205%;">
+                <p class="w3-xxlarge about" style="text-transform:uppercase;">
+                    <span class="FontBold" style="letter-spacing:10px;">Portfolio</span>
+                    <br> 
+                    <span class="w3-text-orange" style="letter-spacing:2px;">Flyers</span></p>
+            </div>
+            <!--Larger Resolution Navigation Menu-->
+            <div class="w3-center w3-cell w3-btn-group w3-large" style="width:45vw">
+                <div style="width:30.33%" class="w3-dropdown-hover w3-white">
+                    <span class="w3-button w3-white">Portfolio <i class="fa fa-bars" aria-hidden="true"></i></span>
+                    <div class="w3-dropdown-content w3-border">
+                        <a class="Link w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="Illustrations.html">Illustrations</a>
+                        <a class="Link w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="Logos.html">Logos</a>
+                        <a class="Link w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="Flyers.html">Flyers</a>
+                    </div>
+                </div>
+                <a style="width:30.33%"class="w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="About.html">About</a>
+                <a style="width:30.33%"class="w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="Contact.html">Contact</a>
+            </div>
+            <div class="w3-container w3-cell about w3-text-black" style="width:30vw;font-size:2.5vw;vertical-align:top;">
+                <a style="text-decoration:none" href="index.html">
+<!--
+                    <div class="right" style="width:4em;padding-left:0em;line-height:0.73em;">
+                        <span style="font-size:2.25vw;letter-spacing:0.17em;">Graphic</span>
+                        <span class="FontBold" style="font-size:2.35vw;letter-spacing:0.26em;border-bottom:0.15em solid rgb(250,170,80);border-radius:5px 5px;">Artist</span>
+                    </div>
+                    <div class="right" style="width:4em;padding-left:0.7em;line-height:0.93em;">
+                        <span class="FontBold" style="font-size:3.25vw;letter-spacing:3px;">Avenii</span>
+                        <span style="font-size:2vw;letter-spacing:0.17em;">Johnson</span>
+                    </div>
+-->
+                    <img class="w3-animate-opacity" style="max-width:80%;" src="Images/AJGA-yellow.png" alt="Avenii Johnson Graphic Artist" />
+                </a>
+            </div>
+        </div>
+        <hr>
+            
+        <!--Section with Images-->
+        <div class="w3-container aa-leftbar">
+            <!--First Row with Four Images-->
+            <div class="w3-row-padding w3-margin-top" style="width:100%;">
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/xxi.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/Avenue-thumbnail.jpg" alt="XXI Avenue" />
+                </div>
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/woman.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/Bomac-Cage-Fights-2-thumbnail.jpg" alt="BOMAC The Revenge" />
+                </div>
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/BOMAC.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/Bomac-the-Revenge-thumbnail.jpg" alt="BOMAC Cage Fights" />
+                </div>
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" 
+                     onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/Beast-Mode.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/Yves-Edwards-thumbnail.jpg" alt="MMA Beast Mode" />
+                </div>
+            </div>
+            
+            <!--Second Row with Four Images-->
+            <div class="w3-row-padding w3-margin-top">
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/Chilli.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/Chilli-Cook-Out-Thumbnail.jpg" alt="Chilli Cook Out" />
+                </div>
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/Rico.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/Rico-Farington-Thumbnail.jpg" alt="Rico Farington" />
+                </div>
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" 
+                     onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/Sparta.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/Sparta-Flyer-Thumbnail.jpg" alt="Sparta" />
+                </div>
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" 
+                     onclick="ShowImageModal_Landscape('Images/Portfolio/Flyers/Bahama-Mama.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/TonAsh-Flyer-Tumbnail.jpg" alt="TonAsh Bahama Mama Launch Party Flyer" />
+                </div>
+            </div>
+            
+            <!--Third Row with Four Images-->
+            <div class="w3-row-padding w3-margin-top">
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" 
+                     onclick="ShowImageModal_Landscape('Images/Portfolio/Flyers/MAVS-Flyer.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/MAVS-Flyer-thumbnail.jpg" alt="MAVS" />
+                </div>
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" 
+                     onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/House-Party-MCK.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/Crib-and-Chill-Thumbnail.jpg" alt="Crib and Chill" />
+                </div>
+                <div class="w3-quarter" style="overflow:hidden;cursor:pointer;" 
+                     onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/Tech-Gadgets-Flyer-i7.jpg')">
+                    <img class="animate-zoom-hover" src="Images/Portfolio/Flyers/Tech-Gadgets-Flyer-i7-thumbnail.jpg" alt="Tech Gadgets" />
+                </div>
+            </div>
+        </div>
+            
+        <!--Footer Items-->
+        <footer class="w3-row" id="bottom">
+            <div class="w3-col" style="width:75%;"><div class="horzline-black">-</div></div>
+            <div class="w3-rest" style="padding-left:1em;"><div class="rcontent w3-text-orange BebasNeueThick" >&copy; Avenii Johnson 2016</div></div>
+        </footer>
+        </div>
+        
+        <!--Modal to Display Fullscreen Clicked Images-->      
+        <div id="ImgModal" class="aa-modal" onclick="this.style.display='none'">
+            <div class="aa-modal-content Center w3-animate-zoom">
+                <span class="w3-closebtn w3-container w3-display-topright w3-text-red w3-hover-red w3-padding-16">&times;</span>
+                <img id="ImgModalSrc" style="max-width:100%;max-height:100%;"/>
+            </div>
+        </div>
+        <div id="ImgModal-portrait" class="aa-modal" onclick="this.style.display='none'">
+            <div class="aa-modal-content-portrait Center w3-animate-zoom">
+                <span class="w3-closebtn w3-container w3-display-topright w3-text-red w3-hover-red w3-padding-16">&times;</span>
+                <img id="ImgModalSrc-portrait" style="max-width:100%;max-height:100%;" />
+            </div>
+        </div>
+        <div id="ImgModal-landscape" class="aa-modal" onclick="this.style.display='none'">
+            <div class="aa-modal-content-landscape Center w3-animate-zoom">
+                <span class="w3-closebtn w3-container w3-display-topright w3-text-red w3-hover-red w3-padding-16">&times;</span>
+                <img id="ImgModalSrc-landscape" style="max-width:100%;max-height:90%;" />
+            </div>
+        </div>
+                           
+        <!--**//Shows mobile devices this page//**-->
+        <div class="w3-hide-large">
+            <a href="index.html">
+                <div class="w3-row w3-container w3-center w3-animate-left" style="padding-top:1em">
+                    <img class="w3-animate-opacity" style="max-width:80%;" src="Images/AJGA-black.png" alt="Avenii Johnson Head Drawing" />
+                </div>
+            </a>
+         <!--Flyers (Page Title)-->
+        <div class="w3-container w3-row w3-center" style="line-height:205%;">
+            <p class="w3-large about BebasNeue" style="text-transform:uppercase;">
+                <span class="w3-text-orange" style="letter-spacing:2px;">Flyers</span>
+            </p>
+        </div> 
+        <!--Navigation Menu-->
+        <div class="w3-cell-row navMenu BebasNeue" style="width:100%;font-size:0.95em;padding-top:1em;padding-bottom:0.5em;">
+            <!--Larger Resolution Navigation Menu-->
+            <div class="w3-container w3-center w3-cell w3-btn-group">
+                <div style="width:30.33%" class="w3-dropdown-click w3-white">
+                    <span onclick="ClickDropDown()" class="w3-button w3-white">Portfolio <i class="fa fa-bars" aria-hidden="true"></i></span>
+                    <div id="DropMenu" class="w3-dropdown-content w3-border" style="z-index:10;">
+                        <a class="Link w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="Illustrations.html">Illustrations</a>
+                        <a class="Link w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="Logos.html">Logos</a>
+                        <a class="Link w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="Flyers.html">Flyers</a>
+                    </div>
+                </div>
+                <a style="width:28.33%"class="w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="About.html">About</a>
+                <a style="width:28.33%"class="w3-button w3-text-dark-grey w3-hover-text-blue w3-white w3-hover-white" href="Contact.html">Contact</a>
+            </div>
+        </div>
+        <hr>
+        
+        <!--Section with Images-->
+        <div class="w3-container aa-leftbar">
+            <!--First Row with Two Images-->
+            <div class="w3-cell-row w3-margin-top">
+                <div class="w3-cell" style="overflow:hidden;cursor:pointer;padding-right:5px;" onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/xxi.jpg')">
+                    <img class="w3-image animate-zoom-hover" src="Images/Portfolio/Flyers/Avenue-thumbnail.jpg" alt="XXI Avenue" />
+                </div>
+                <div class="w3-cell" style="overflow:hidden;cursor:pointer;padding-right:5px;" onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/woman.jpg')">
+                    <img class="w3-image animate-zoom-hover" src="Images/Portfolio/Flyers/Bomac-Cage-Fights-2-thumbnail.jpg" alt="BOMAC The Revenge" />
+                </div>
+            </div>
+            <!--Second Row with Two Images-->
+            <div class="w3-cell-row w3-margin-top">
+                <div class="w3-cell" style="overflow:hidden;cursor:pointer;padding-right:5px;" onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/BOMAC.jpg')">
+                    <img class="w3-image animate-zoom-hover" src="Images/Portfolio/Flyers/Bomac-the-Revenge-thumbnail.jpg" alt="BOMAC Cage Fights" />
+                </div>
+                <div class="w3-cell" style="overflow:hidden;cursor:pointer;padding-right:5px;" 
+                     onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/Beast-Mode.jpg')">
+                    <img class="w3-image animate-zoom-hover" src="Images/Portfolio/Flyers/Yves-Edwards-thumbnail.jpg" alt="MMA Beast Mode" />
+                </div>
+            </div>
+            
+            <!--Third Row with Two Images-->
+            <div class="w3-cell-row w3-margin-top">
+                <div class="w3-cell" style="overflow:hidden;cursor:pointer;padding-right:5px;" onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/Chilli.jpg')">
+                    <img class="w3-image animate-zoom-hover" src="Images/Portfolio/Flyers/Chilli-Cook-Out-Thumbnail.jpg" alt="Chilli Cook Out" />
+                </div>
+                <div class="w3-cell" style="overflow:hidden;cursor:pointer;padding-right:5px;" onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/Rico.jpg')">
+                    <img class="w3-image animate-zoom-hover" src="Images/Portfolio/Flyers/Rico-Farington-Thumbnail.jpg" alt="Rico Farington" />
+                </div>
+
+             </div>
+            <!--Fourth Row with Two Images-->
+            <div class="w3-cell-row w3-margin-top">
+                <div class="w3-cell" style="overflow:hidden;cursor:pointer;padding-right:5px;" 
+                     onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/Sparta.jpg')">
+                    <img class="w3-image animate-zoom-hover" src="Images/Portfolio/Flyers/Sparta-Flyer-Thumbnail.jpg" alt="Sparta" />
+                </div>
+                <div class="w3-cell" style="overflow:hidden;cursor:pointer;padding-right:5px;" 
+                     onclick="ShowImageModal_Landscape('Images/Portfolio/Flyers/Bahama-Mama.jpg')">
+                    <img class="w3-image animate-zoom-hover" src="Images/Portfolio/Flyers/TonAsh-Flyer-Tumbnail.jpg" alt="TonAsh Bahama Mama Launch Party Flyer" />
+                </div>
+            </div>
+            <!--Fifth Row with Two Images-->
+            <div class="w3-cell-row w3-margin-top">
+                <div class="w3-cell" style="overflow:hidden;cursor:pointer;padding-right:5px;" 
+                     onclick="ShowImageModal_Landscape('Images/Portfolio/Flyers/MAVS-Flyer.jpg')">
+                    <img class="w3-image animate-zoom-hover" src="Images/Portfolio/Flyers/MAVS-Flyer-thumbnail.jpg" alt="MAVS" />
+                </div>
+                <div class="w3-cell" style="overflow:hidden;cursor:pointer;padding-right:5px;" 
+                     onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/House-Party-MCK.jpg')">
+                    <img class="w3-image animate-zoom-hover" src="Images/Portfolio/Flyers/Crib-and-Chill-Thumbnail.jpg" alt="Crib and Chill" />
+                </div>
+
+            </div>
+            <!--Sixth Row with Two Images-->
+            <div class="w3-cell-row w3-margin-top">
+                <div class="w3-cell" style="overflow:hidden;cursor:pointer;padding-right:5px;" 
+                     onclick="ShowImageModal_Portrait('Images/Portfolio/Flyers/Tech-Gadgets-Flyer-i7.jpg')">
+                    <img class="w3-image animate-zoom-hover" src="Images/Portfolio/Flyers/Tech-Gadgets-Flyer-i7-thumbnail.jpg" alt="Tech Gadgets" />
+                </div>
+            </div>
+        </div>
+        <!--Footer Items-->
+        <footer class="w3-row" id="bottom">
+            <div class="w3-col" style="width:60%;"><div class="horzline-black">-</div></div>
+            <div class="w3-rest" style="padding-left:1em;"><div class="rcontent w3-text-orange BebasNeueThick" >&copy; Avenii Johnson 2016</div></div>
+        </footer>
+        </div>
+        
+        
+        <!--JavaScript Code-->
+        <script src="JS/Functions_JS.js"></script>
+    </body>
+    
+</html>

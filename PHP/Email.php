@@ -1,6 +1,9 @@
 <?php
     if($_SERVER["REQUEST_METHOD"] == "POST") {
-        $name_field = $_POST['name'];
+        $name_field = $_POST['fname'];
+        $name_field = htmlspecialchars($name_field);
+
+        $name_field = $_POST['lname'];
         $name_field = htmlspecialchars($name_field);
         
         $number_field = $_POST['number'];
@@ -9,7 +12,19 @@
         $email_field = $_POST['email'];
         $email_field = htmlspecialchars($email_field);
         
-        $to = "info@avenii.com";
+        $city_field = $_POST['city'];
+        $city_field = htmlspecialchars($city_field);
+        
+        $state_field = $_POST['state'];
+        $state_field = htmlspecialchars($state_field);
+        
+        $zip_field = $_POST['zip'];
+        $zip_field = htmlspecialchars($zip_field);
+        
+        $how_field = $_POST['how'];
+        $how_field = htmlspecialchars($how_field);
+        
+        $to = "info@marcos.com";
         $subject = "$name_field (Contact Request)";
         $message = $_POST['message'];
         $message = htmlspecialchars($message);
@@ -20,8 +35,8 @@
         $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 
         // Additional headers
-        //$headers[] = 'To: Aveni <avenii@example.com>';
-        $headers[] = 'From: Avenii.com';
+        //$headers[] = 'To: Marcos <marcos@example.com>';
+        $headers[] = 'From: MarcosPizza.com';
         $body = "
         <html>
             <head>
@@ -31,6 +46,10 @@
                 <p><strong>From:</strong> $name_field</p>
                 <p><strong>Number:</strong> $number_field</p>
                 <p><strong>E-Mail:</strong> $email_field</p>
+                <p><strong>City:</strong> $city_field</p>
+                <p><strong>State:</strong> $state_field</p>
+                <p><strong>Zip:</strong> $zip_field</p>
+                <p><strong>How did you hear about us?:</strong> $how_field</p>
                 <p><strong>Message:</strong></p> <p style='margin-left:4em;'>$message</p>
             </body>
         </html>
