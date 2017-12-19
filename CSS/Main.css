@@ -92,7 +92,7 @@ body
         display:block!important;
     }
 }
-@media only screen and (min-width:992px) and (max-width:1365px) {
+@media only screen and (min-width:900px) and (max-width:1365px) {
     .aa-hide-1024x{
         display:none!important;
     }    
@@ -100,7 +100,7 @@ body
         display:block!important;
     }
 }
-@media only screen and (min-width:601px) and (max-width:991px) {
+@media only screen and (min-width:725px) and (max-width:899px) {
     .aa-hide-tablet{
         display:none!important;
     }    
@@ -108,7 +108,7 @@ body
         display:block!important;
     }
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:724px) {
     .aa-hide-mobile{
         display:none!important;
     }    
@@ -127,12 +127,14 @@ body
 /**Top Page Navigation Menu**/
 .navMenu
 {
+    position: relative;
     font-family: 'Herald';
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.01em;
     font-size:125%;
-    text-shadow:3px 5px 15px #6e1e1e;
-    overflow:hidden;
+    //text-shadow:3px 5px 15px #6e1e1e;
+    //overflow:hidden;
+    z-index: 2;
 }
 
 .FontBold
@@ -157,10 +159,10 @@ body
 {
     font-variant: small-caps;
     font-family: 'PT Sans', sans-serif !important;
-    border-left: 0.1em solid white;
-    border-right: 0.1em solid white;
+    //border-left: 0.1em solid white;
+    /border-right: 0.1em solid white;
     border-top: 0.45em solid white;
-    border-radius:20px 20px 0px 0px;
+    //border-radius:20px 20px 0px 0px;
     background-color: black;
     color: white;
 }

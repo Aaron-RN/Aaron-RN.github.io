@@ -2,6 +2,7 @@
 .w3-theme-d2 {color:#fff !important; background-color:#932828 !important}
 .w3-theme-d3 {color:#fff !important; background-color:#812323 !important}
 .w3-theme-d4 {color:#fff !important; background-color:#6e1e1e !important}
+.w3-text-d3 {color: #812323 !important}
 .w3-hover-custom-red 
 {
     transition-duration: 1s;-webkit-transition-duration: 1s;-moz-transition-duration: 1s;-o-transition-duration: 1s;
@@ -16,14 +17,37 @@
     z-index: 2;
 }
 
-#logo {
-  position: absolute; // Reposition logo from the natural layout
-  left: 75px;
-  top: 0px;
-  height: 7em;
-  z-index: 3;
+.aa-round-bottom{
+    border-radius: 0px 0px 1.5em 1.5em;
 }
 
+#logo {
+    position: absolute; // Reposition logo from the natural layout
+    left: 95px;
+    top: 20px;
+    z-index: 3;
+    width: 10em;
+    height: 7em;
+}
+
+#slogan {
+    position: absolute; // Reposition logo from the natural layout
+    left: 10em !important;
+    top: 15px;
+    z-index: 3;
+    width: 10em;
+    height: 5em;
+}
+#crust {
+    position: absolute; // Reposition logo from the natural layout
+    margin:0 auto;
+    left: 0em !important;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 18em;
+    image-rendering: -webkit-optimize-contrast;
+}
 #redLineLeft{
     display: inline-block;
     background-color:darkred;color:darkred;
@@ -32,7 +56,12 @@
     margin-top: 2%;
     //z-index: 5;
 }
-
+.padding-none{
+    padding:0em!important;
+    padding-bottom: 5px;
+    //border:2px solid red;
+    width: 12.5%;
+}
 .WhitePage
 {
     width:85em!important;
@@ -60,19 +89,19 @@
     background-size: 100% 100%;
 }
 .SlideShowBG {
-    background-image: url(../Images/Individuals/HomeBG.jpeg);
+    background-image: url(../Images/Individuals/homebg_2.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     //background-attachment: fixed;
-    background-size: contain;
+    background-size: 100% 100%;
 }
 
 .BottomBG {
-    background-image: url(../Images/Individuals/Homepage-Asset_cropped.png);
+    background-image: url(../Images/Individuals/homepage_redbar.png);
     background-repeat: no-repeat;
     background-position: center center;
     //background-attachment: fixed;
-    background-size: contain;
+    background-size: 100% 100%;
 }
 
 .GoldbarBG {
@@ -80,7 +109,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     //background-attachment: fixed;
-    background-size: 86% 100%;
+    background-size: 100% 100%;
 }
 
 .GoldbarFullBG {
