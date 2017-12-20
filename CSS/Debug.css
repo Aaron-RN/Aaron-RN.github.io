@@ -1,0 +1,59 @@
+.dbg-blue
+{
+    border: 0.1em solid blue;
+    outline: 0.1em solid darkblue;
+}
+
+.dbg-green
+{
+    border: 0.1em solid green;
+    outline: 0.1em solid darkgreen;
+}
+
+.dbg-purple
+{
+    border: 0.1em solid purple;
+    outline: 0.1em solid rgb(102, 0, 102);
+}
+
+.dbg-yellow
+{
+    border: 0.1em solid yellow;
+    outline: 0.1em solid rgb(255, 204, 0);
+}
+
+.dbg-red
+{
+    border: 0.1em solid red;
+    outline: 0.1em solid darkred;
+}
+
+.dbg-orange
+{
+    border: 0.1em solid orange;
+    outline: 0.1em solid rgb(204, 102, 0);
+}
+
+.dbg-white
+{
+    border: 0.1em solid white;
+    outline: 0.1em solid #DDD;
+}
+
+.dbg-black
+{
+    border: 0.1em solid #222;
+    outline: 0.1em solid black;
+}
+
+.dbg-gray
+{
+    border: 0.1em solid gray;
+    outline: 0.1em solid #444;
+}
+
+.dbg-brown
+{
+    border: 0.1em solid brown;
+    outline: 0.1em solid rgb(102, 51, 0);
+}
