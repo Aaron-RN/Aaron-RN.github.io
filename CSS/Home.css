@@ -1,7 +1,8 @@
-.w3-theme-d1 {color:#fff !important; background-color:#a62d2d !important}
+.w3-theme-d1 {color:#fff !important; background-color:#d62d2d !important}
 .w3-theme-d2 {color:#fff !important; background-color:#932828 !important}
 .w3-theme-d3 {color:#fff !important; background-color:#812323 !important}
 .w3-theme-d4 {color:#fff !important; background-color:#6e1e1e !important}
+.w3-theme-d5 {color:rgb(255,235,235); background-color:#2e1e1e !important}
 .w3-text-d3 {color: #812323 !important}
 .w3-hover-custom-red 
 {
@@ -84,6 +85,8 @@
     margin:0 auto;
     background-color:#fefdfa;color:#812323;
     padding:6em;
+    padding-top:2em;
+    padding-bottom:2em;
     margin-bottom:2em;
     box-shadow:3px 5px 15px #444;border-radius:20px;
 }
