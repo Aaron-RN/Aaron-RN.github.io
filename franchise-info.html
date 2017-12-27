@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://use.fontawesome.com/c307ca9280.js"></script>
-        <!--<script src="JS/Functions_JS.js"></script>-->
+        <script src="JS/Countries.js"></script>
         <link rel="stylesheet" type="text/css" href="CSS/Debug.css">
         <link rel="stylesheet" type="text/css" href="CSS/Main.css">
         <link rel="stylesheet" type="text/css" href="CSS/Home.css">
@@ -206,7 +206,7 @@
             </div>
             <div class="w3-cell-row" style="background-color:#fefdfa;box-shadow: 15px 4px 18px #444;">
                 <div class="w3-cell" style="width:40%;height:1em;padding-right: 0.4em;"></div>
-                <a class="w3-cell w3-cell-middle w3-button FontBold w3-white w3-text-d3 w3-hover-custom-red animate-zoom-hover w3-round-large padding-none" style="width:15%;font-size:3.5vw;" href="about.html">About</a>
+                <a class="w3-cell w3-cell-middle w3-button w3-white w3-text-d3 w3-hover-custom-red animate-zoom-hover w3-round-large padding-none" style="width:15%;font-size:3.5vw;" href="about.html">About</a>
                 <a class="w3-cell w3-cell-middle w3-button w3-white w3-text-d3 w3-hover-custom-red animate-zoom-hover w3-round-large padding-none" style="width:70%;font-size:3.5vw;" href="why-marcos.html">Why Marco's?</a>
                 <div class="w3-dropdown-hover w3-white w3-right">
                     <span class="w3-button w3-white"><i class="fa fa-bars" style="font-size:3.5em;" aria-hidden="true"></i></span>
@@ -264,21 +264,21 @@
                             <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-globe"></i></div>
                             <div class="w3-rest">
                                 <div class="FontBold">City</div>
-                                <input class="w3-input w3-round-xlarge w3-hover-white-blue" type="text" name="city" placeholder="City" size="35" maxlength="35" required>
+                                <select id="country1" class="w3-input w3-round-xlarge w3-hover-white-blue" name="city" placeholder="City" required></select>
                             </div>
                         </div>
                        <div class="w3-row w3-section">
                             <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-map"></i></div>
                             <div class="w3-rest">
                                 <div class="FontBold">State/Province</div>
-                                <input class="w3-input w3-round-xlarge w3-hover-white-blue" type="text" name="state" placeholder="State/Province" size="35" maxlength="35" required>
+                                <select id="state1" class="w3-input w3-round-xlarge w3-hover-white-blue" name="state" placeholder="State/Province" required></select>
                             </div>
                         </div>
                        <div class="w3-row w3-section">
                             <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-home"></i></div>
                             <div class="w3-rest">
-                                <div class="FontBold">Zip</div>
-                                <input class="w3-input w3-round-xlarge w3-hover-white-blue" type="text" name="zip" placeholder="ZIP code" size="10" maxlength="10" required>
+                                <div class="FontBold">Zip/Postal Code</div>
+                                <input id="zip1" class="w3-input w3-round-xlarge w3-hover-white-blue" type="text" name="zip" placeholder="ZIP code" size="10" maxlength="10" required>
                             </div>
                         </div>
                        <div class="w3-row w3-section">
@@ -339,21 +339,21 @@
                             <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-globe"></i></div>
                             <div class="w3-rest">
                                 <div class="FontBold">City</div>
-                                <input class="w3-input w3-round-xlarge w3-hover-white-blue" type="text" name="city" placeholder="City" size="35" maxlength="35" required>
+                                <select id="country2" class="w3-input w3-round-xlarge w3-hover-white-blue" name="city" placeholder="City" required></select>
                             </div>
                         </div>
                        <div class="w3-row w3-section">
                             <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-map"></i></div>
                             <div class="w3-rest">
                                 <div class="FontBold">State/Province</div>
-                                <input class="w3-input w3-round-xlarge w3-hover-white-blue" type="text" name="state" placeholder="State/Province" size="35" maxlength="35" required>
+                                <select id="state2" class="w3-input w3-round-xlarge w3-hover-white-blue" name="state" placeholder="State/Province" required></select>
                             </div>
                         </div>
                        <div class="w3-row w3-section">
                             <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-home"></i></div>
                             <div class="w3-rest">
-                                <div class="FontBold">Zip</div>
-                                <input class="w3-input w3-round-xlarge w3-hover-white-blue" type="text" name="zip" placeholder="ZIP code" size="10" maxlength="10" required>
+                                <div class="FontBold">Zip/Postal Code</div>
+                                <input id="zip2" class="w3-input w3-round-xlarge w3-hover-white-blue" type="text" name="zip" placeholder="ZIP code" size="10" maxlength="10" required>
                             </div>
                         </div>
                        <div class="w3-row w3-section">
@@ -414,21 +414,21 @@
                             <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-globe"></i></div>
                             <div class="w3-rest">
                                 <div class="FontBold">City</div>
-                                <input class="w3-input w3-round-xlarge w3-hover-white-blue" type="text" name="city" placeholder="City" size="35" maxlength="35" required>
+                                <select id="country3" class="w3-input w3-round-xlarge w3-hover-white-blue" name="city" placeholder="City" required></select>
                             </div>
                         </div>
                        <div class="w3-row w3-section">
                             <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-map"></i></div>
                             <div class="w3-rest">
                                 <div class="FontBold">State/Province</div>
-                                <input class="w3-input w3-round-xlarge w3-hover-white-blue" type="text" name="state" placeholder="State/Province" size="35" maxlength="35" required>
+                                <select id="state3" class="w3-input w3-round-xlarge w3-hover-white-blue" name="state" placeholder="State/Province" required></select>
                             </div>
                         </div>
                        <div class="w3-row w3-section">
                             <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-home"></i></div>
                             <div class="w3-rest">
-                                <div class="FontBold">Zip</div>
-                                <input class="w3-input w3-round-xlarge w3-hover-white-blue" type="text" name="zip" placeholder="ZIP code" size="10" maxlength="10" required>
+                                <div class="FontBold">Zip/Postal Code</div>
+                                <input id="zip3" class="w3-input w3-round-xlarge w3-hover-white-blue" type="text" name="zip" placeholder="ZIP code" size="10" maxlength="10" required>
                             </div>
                         </div>
                        <div class="w3-row w3-section">
@@ -489,21 +489,21 @@
                             <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-globe"></i></div>
                             <div class="w3-rest">
                                 <div class="FontBold">City</div>
-                                <input class="w3-input w3-round-xlarge w3-hover-white-blue" type="text" name="city" placeholder="City" size="35" maxlength="35" required>
+                                <select id="country4" class="w3-input w3-round-xlarge w3-hover-white-blue" name="city" placeholder="City" required></select>
                             </div>
                         </div>
                        <div class="w3-row w3-section">
                             <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-map"></i></div>
                             <div class="w3-rest">
                                 <div class="FontBold">State/Province</div>
-                                <input class="w3-input w3-round-xlarge w3-hover-white-blue" type="text" name="state" placeholder="State/Province" size="35" maxlength="35" required>
+                                <select id="state4" class="w3-input w3-round-xlarge w3-hover-white-blue" name="state" placeholder="State/Province" required></select>
                             </div>
                         </div>
                        <div class="w3-row w3-section">
                             <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-home"></i></div>
                             <div class="w3-rest">
-                                <div class="FontBold">Zip</div>
-                                <input class="w3-input w3-round-xlarge w3-hover-white-blue" type="text" name="zip" placeholder="ZIP code" size="10" maxlength="10" required>
+                                <div class="FontBold">Zip/Postal Code</div>
+                                <input id="zip4" class="w3-input w3-round-xlarge w3-hover-white-blue" type="text" name="zip" placeholder="ZIP code" size="10" maxlength="10" required>
                             </div>
                         </div>
                        <div class="w3-row w3-section">
@@ -564,21 +564,21 @@
                             <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-globe"></i></div>
                             <div class="w3-rest">
                                 <div class="FontBold">City</div>
-                                <input class="w3-input w3-round-xlarge w3-hover-white-blue" type="text" name="city" placeholder="City" size="35" maxlength="35" required>
+                                <select id="country5" class="w3-input w3-round-xlarge w3-hover-white-blue" name="city" placeholder="City" required></select>
                             </div>
                         </div>
                        <div class="w3-row w3-section">
                             <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-map"></i></div>
                             <div class="w3-rest">
                                 <div class="FontBold">State/Province</div>
-                                <input class="w3-input w3-round-xlarge w3-hover-white-blue" type="text" name="state" placeholder="State/Province" size="35" maxlength="35" required>
+                                <select id="state5" class="w3-input w3-round-xlarge w3-hover-white-blue" name="state" placeholder="State/Province" required></select>
                             </div>
                         </div>
                        <div class="w3-row w3-section">
                             <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-home"></i></div>
                             <div class="w3-rest">
-                                <div class="FontBold">Zip</div>
-                                <input class="w3-input w3-round-xlarge w3-hover-white-blue" type="text" name="zip" placeholder="ZIP code" size="10" maxlength="10" required>
+                                <div class="FontBold">Zip/Postal Code</div>
+                                <input id="zip5" class="w3-input w3-round-xlarge w3-hover-white-blue" type="text" name="zip" placeholder="ZIP code" size="10" maxlength="10" required>
                             </div>
                         </div>
                        <div class="w3-row w3-section">
@@ -653,7 +653,14 @@
 
              
         <!--JavaScript Code-->
-<!--        <script src="JS/Functions_JS.js"></script>-->
+        <script language="javascript">
+            //populateCountriesAll("country", "state");
+            populateCountries("country1","state1");
+            populateCountries("country2","state2");
+            populateCountries("country3","state3");
+            populateCountries("country4","state4");
+            populateCountries("country5","state5");
+        </script>
     </body>
     
 </html>
