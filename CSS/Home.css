@@ -24,11 +24,12 @@
 
 #logo {
     position: absolute; // Reposition logo from the natural layout
-    left: 95px;
+    //left: 95px;
     top: 16px;
     z-index: 3;
-    width: 10em;
-    height: 7em;
+    width: 12em;
+    height: 6em;
+    //border: 1em solid red;
 }
 
 #slogan {
