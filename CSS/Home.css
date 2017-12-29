@@ -119,12 +119,21 @@
     background-size: 100% 100%;
 }
 .SlideShowBG {
+    background-image: url(../Images/Individuals/Background-PATTERN-1.jpg);
+    background-repeat: repeat;
+    background-position: center center;
+    //background-attachment: fixed;
+    background-size: 05%;
+}
+/*
+.SlideShowBG {
     background-image: url(../Images/Individuals/homebg_2.jpeg),url(../Images/Individuals/Background-PATTERN-1.jpg);
     background-repeat: no-repeat,repeat;
     background-position: center center,center center;
     //background-attachment: fixed;
     background-size: 100% 100%,05%;
 }
+*/
 
 .BottomBG {
     position: relative;z-index: 3;

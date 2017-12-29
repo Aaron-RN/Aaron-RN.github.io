@@ -24,31 +24,13 @@
     src: url(Fonts/Herald/Herald.woff) format('woff');
 }
 
-.w3-allerta
-{
-    font-family: "Allerta Stencil", Sans-serif;
-}
-.Herald
-{
-    font-family: 'Herald';
-}
-.PTSans
-{
-    font-family: 'PT Sans', sans-serif;
-}
-.SansSerif
-{
-    font-family: 'Sans-Serif';
-}
-.BebasNeue
-{
-    font-family: 'BebasNeueBook';
-    font-weight: 400;
-}
-.BebasNeueThick
-{
-    font-family: 'BebasNeueThick';
-}
+.w3-allerta{font-family: "Allerta Stencil", Sans-serif;}
+.Herald{font-family: 'Herald';}
+.PTSans{font-family: 'PT Sans', sans-serif;}
+.IndieFlower{font-family: 'Indie Flower', cursive, 'Amatic SC';}
+.SansSerif{font-family: 'Sans-Serif';}
+.BebasNeue{font-family: 'BebasNeueBook';font-weight: 400;}
+.BebasNeueThick{font-family: 'BebasNeueThick';}
 
 .preload * {
     -webkit-transition: none !important;
