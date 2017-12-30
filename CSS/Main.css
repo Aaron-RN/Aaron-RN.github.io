@@ -145,7 +145,7 @@ body
     text-decoration: underline;
 }
 
-#bottom
+.bottom
 {
     font-variant: small-caps;
     font-family: 'PT Sans', sans-serif !important;
@@ -155,10 +155,6 @@ body
     //border-radius:20px 20px 0px 0px;
     background-color: black;
     color: white;
-}
-#bottomLogo
-{
-    //width: 60%;display:table-cell;vertical-align:middle;padding: 1em;
 }
 
 .Center{

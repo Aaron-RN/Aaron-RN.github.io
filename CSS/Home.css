@@ -22,7 +22,7 @@
     border-radius: 0px 0px 1.5em 1.5em;
 }
 
-#logo {
+.logo {
     position: absolute; // Reposition logo from the natural layout
     //left: 95px;
     top: 16px;
@@ -32,7 +32,7 @@
     //border: 1em solid red;
 }
 
-#slogan {
+.slogan {
     position: absolute; // Reposition logo from the natural layout
     left: 10em !important;
     top: 15px;
@@ -40,10 +40,14 @@
     width: 10em;
     height: 5em;
 }
-#dough {
-    display: none;
+.dough {
+    //display: none;
     position: absolute; // Reposition logo from the natural layout
     margin:0 auto;
+    background-image: url(../Images/Individuals/HomeSauce_768px_text.jpeg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
     left: 0em !important;
     top: 15em;
     z-index: 1;
@@ -51,14 +55,29 @@
     height: 50em;
     image-rendering: -webkit-optimize-contrast;
 }
-#crust {
+.dough2 {
+    display: none;
+    position: absolute; // Reposition logo from the natural layout
+    margin:0 auto;
+    background-image: url(../Images/Individuals/HomeCheese_768px_text.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    left: 0em !important;
+    top: 15em;
+    z-index: 1;
+    width: 100%;
+    height: 50em;
+    image-rendering: -webkit-optimize-contrast;
+}
+.crust {
     position: absolute; // Reposition logo from the natural layout
     margin:0 auto;
     //left:65px;
     top: 0px;
     z-index: 2;
     width: 100%;
-    height: 17em;
+    height: 250px;
     image-rendering: -webkit-optimize-contrast;
 }
 @media only screen and (min-width:2560px) {
