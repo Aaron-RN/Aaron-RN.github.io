@@ -108,8 +108,8 @@ body
 }
 @media only screen and (min-width:2560px) {
     .w3-responsive-center{
-        margin-left:10%!important;
-        margin-right:10%!important;
+        //margin-left:10%!important;
+        //margin-right:10%!important;
     }
 }
 
@@ -258,6 +258,6 @@ body
 }
 .w3-animate-opacity
 {
-    -webkit-animation:opac 2.5s;
-    animation:opac 2.5s;
+    -webkit-animation:opac 1s;
+    animation:opac 1s;
 }
