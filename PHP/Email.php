@@ -36,7 +36,7 @@
 
         // Additional headers
         //$headers[] = 'To: Marcos <marcos@example.com>';
-        $headers[] = 'From: MarcosPizza.com';
+        $headers[] = 'From: MarcosPizza242.com';
         $body = "
         <html>
             <head>
