@@ -1,117 +1,62 @@
-var AllBackgroundElements = new Array();
-var AllBackgroundElements2 = new Array();
-AllBackgroundElements = document.querySelectorAll(".dough");
-AllBackgroundElements2 = document.querySelectorAll(".dough2");
+var trainingPage = new Array();
+trainingPage = document.querySelectorAll("#navTraining");
 
-var SliderLabels1 = new Array();
-var SliderLabels2 = new Array();
-var SliderLabels3 = new Array();
-SliderLabels1 = document.querySelectorAll(".sliderLabel1");
-SliderLabels2 = document.querySelectorAll(".sliderLabel2");
-SliderLabels3 = document.querySelectorAll(".sliderLabel3");
-var SliderLabelInActive = "rgba(200,50,50,0.3)";
-var SliderLabelActive = "rgba(235,50,50,0.8)";
 
-var slideNumber = 1;
-var maxSlideNumber = 3;
-var Slide1;
-var Slide2;
-var Slide3;
-SetSliderImages();
-for(var i = 0;i < AllBackgroundElements.length; i++)
+for(var i = 0; i < trainingPage.length; i++)
     {
-        AllBackgroundElements[i].style.backgroundImage=Slide1;
-        AllBackgroundElements2[i].style.backgroundImage=Slide1;
-    }
-var timerSwitch = 5000;
-var loop = setInterval(function(){ChangeSlide();}, timerSwitch);
-
-for(var i = 0; i < SliderLabels1.length; i++)
-    {
-        SliderLabels1[i].addEventListener("click", function(e) {SelectSlide(e)});
-        SliderLabels2[i].addEventListener("click", function(e) {SelectSlide(e)});
-        SliderLabels3[i].addEventListener("click", function(e) {SelectSlide(e)});
+        trainingPage[i].addEventListener("click", function() {scrollToPage("Training")});
     }
 
-function SetSliderImages()
-{
-    if(window.innerWidth<=899){
-    Slide1 = 'url("Images/Individuals/HomeSauce_768px_text.jpeg")';
-    Slide2 = 'url("Images/Individuals/HomeCheese_768px_text.jpg")';
-    Slide3 = 'url("Images/Individuals/HomeDough_768px_text.jpg")';
+// Change style of navbar on scroll
+window.onscroll = function() {scrollNavBars()};
+function scrollNavBars() {
+    var navbar = document.getElementById("NavBar");
+    var navbarMail = document.getElementById("NavMailBar");
+    var navbarTitle = document.getElementById("NavBarTitle");
+    if(window.innerWidth <= 768){
+        var navbar = document.getElementById("NavBar2");
+        var navbarMail = document.getElementById("NavMailBar2");
+        var navbarTitle = document.getElementById("NavBarTitle2");
     }
-
-    if(window.innerWidth>899){
-    Slide1 = 'url("Images/Individuals/HomeSauce_1920px_text.jpeg")';
-    Slide2 = 'url("Images/Individuals/HomeCheese_1920px_text.jpg")';
-    Slide3 = 'url("Images/Individuals/HomeDough_1920px_text.jpg")';
+    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
+        navbar.className = "navMenu" + " w3-top" + " w3-theme-d33" + " w3-animate-top" + " dbg-orange";
+        navbarMail.className = "w3-bar" + " w3-theme-d44" + " dbg-yellow";
+        navbar.style.position="fixed";
+        navbar.style.top = "0";
+        navbarTitle.style.display="none";
+    } else {
+        navbar.className = navbar.className.replace("navMenu w3-top w3-theme-d33 w3-animate-top dbg-orange", "navMenu w3-top w3-theme-d3 dbg-orange");
+        navbarMail.className = navbarMail.className.replace("w3-bar w3-theme-d44 dbg-yellow", "w3-bar w3-theme-d4 dbg-yellow");
+        navbar.style.position="absolute";
+        //navbar.style.top = "-41em";
+        navbarTitle.style.display="block";
     }
 }
-function SelectSlide(e)
-{
-    var targetElement = e.target;
-    clearInterval(loop);
-    //alert(targetElement.classList.contains("sliderLabel1"));
-    if(targetElement.classList.contains("sliderLabel1")){slideNumber = maxSlideNumber; ChangeSlide();}
-    if(targetElement.classList.contains("sliderLabel2")){slideNumber = 1; ChangeSlide();}
-    if(targetElement.classList.contains("sliderLabel3")){slideNumber = 2; ChangeSlide();}
-    loop = setInterval(function(){ChangeSlide();}, timerSwitch);
+
+function scrollToPage(pageSelected) {
+    //alert(pageSelected);
+    alert(window.innerWidth + " x " + window.innerHeight);
+    var scrollSpeed = 1;
+    var pageSelected = document.getElementById(pageSelected);
+    var scrollToPos = pageSelected.offsetTop;
+    var scrolledDistance = 0;
+    //alert(scrollToPos + " , " + document.body.scrollTop + "/" + document.documentElement.scrollTop);
+
+    while (scrolledDistance < scrollToPos) {
+        //document.body.scrollTop += scrollSpeed;
+        //document.documentElement.scrollTop += scrollSpeed;
+        window.scrollBy(0 , scrollSpeed);
+        scrolledDistance += scrollSpeed;
+    }  
 }
-function ChangeSlide()
-{
-    if(slideNumber==1)
-        {
-            for(var i = 0;i < SliderLabels1.length; i++)
-                {
-                    SliderLabels1[i].style.backgroundColor=SliderLabelInActive;
-                    SliderLabels2[i].style.backgroundColor=SliderLabelActive;
-                    SliderLabels3[i].style.backgroundColor=SliderLabelInActive;
-                }
-            for(var i = 0;i < AllBackgroundElements.length; i++)
-                {
-                    AllBackgroundElements[i].style.backgroundImage=Slide2;
-                    AllBackgroundElements2[i].style.backgroundImage=Slide2;
-                    //alert(window.getComputedStyle(AllBackgroundElements[i]).getPropertyValue("display"));
-                    if(window.getComputedStyle(AllBackgroundElements[i]).getPropertyValue("display")=="none")
-                    {AllBackgroundElements[i].style.display="initial";AllBackgroundElements2[i].style.display="none";}
-                    else                       {AllBackgroundElements[i].style.display="none";AllBackgroundElements2[i].style.display="initial";}
-                    //alert(AllBackgroundElements[i].style.backgroundImage);
-                }
-        }
-    if(slideNumber==2)
-        {
-            for(var i = 0;i < SliderLabels1.length; i++)
-                {
-                    SliderLabels1[i].style.backgroundColor=SliderLabelInActive;
-                    SliderLabels2[i].style.backgroundColor=SliderLabelInActive;
-                    SliderLabels3[i].style.backgroundColor=SliderLabelActive;
-                }
-            for(var i = 0;i < AllBackgroundElements.length; i++)
-                {
-                    AllBackgroundElements[i].style.backgroundImage=Slide3;
-                    AllBackgroundElements2[i].style.backgroundImage=Slide3;
-                    if(window.getComputedStyle(AllBackgroundElements[i]).getPropertyValue("display")=="none")
-                    {AllBackgroundElements[i].style.display="initial";AllBackgroundElements2[i].style.display="none";}
-                    else                       {AllBackgroundElements[i].style.display="none";AllBackgroundElements2[i].style.display="initial";}
-                }
-        }
-    if(slideNumber==3)
-        {
-            for(var i = 0;i < SliderLabels1.length; i++)
-                {
-                    SliderLabels1[i].style.backgroundColor=SliderLabelActive;
-                    SliderLabels2[i].style.backgroundColor=SliderLabelInActive;
-                    SliderLabels3[i].style.backgroundColor=SliderLabelInActive;
-                }
-            for(var i = 0;i < AllBackgroundElements.length; i++)
-                {
-                    AllBackgroundElements[i].style.backgroundImage=Slide1;
-                    AllBackgroundElements2[i].style.backgroundImage=Slide1;
-                    if(window.getComputedStyle(AllBackgroundElements[i]).getPropertyValue("display")=="none")
-                    {AllBackgroundElements[i].style.display="initial";AllBackgroundElements2[i].style.display="none";}
-                    else                       {AllBackgroundElements[i].style.display="none";AllBackgroundElements2[i].style.display="initial";}
-                }
-        }
-    slideNumber++;
-    if(slideNumber>maxSlideNumber){slideNumber=1;}   
+
+/*Gallery Page Functions*/
+function ShowImageModal(img_src){
+    document.getElementById('ImgModal').style.display='block';
+    document.getElementById('ImgModalSrc').src=img_src;
+}
+
+/*Sponsor Page Modal*/
+function ShowSponsorModal(){
+    document.getElementById('SponsorModal').style.display='block';
 }
