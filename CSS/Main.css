@@ -130,21 +130,34 @@ body
     padding-left: 0.5em !important;
     padding-right: 0.5em !important;
     }
+    .aa-link-selected:before{
+        width: 30px !important;
+    }
+    .aa-header{
+        font-size: 1.75em !important;
+    }
+    .aa-header4{
+        font-size: 2.75em !important;
+    }
     .menuBar{
         font-size: 0.5em !important;
+        padding-top: 0.5em !important; padding-bottom: 0.5em !important;
     }
     .MainBG{
         background-position: center center !important;
         min-height: 600px !important;
     }
     .Beginners {
-        max-height: 360px !important;
+        max-height: 320px !important;
     }
     .Competitors {
-        max-height: 360px !important;
+        max-height: 320px !important;
     }
     .Accolades {
         font-size: 1.25em !important;
+    }
+    .GalleryItem{
+        height: 240px !important;
     }
     .OldGlovesBG {
         background-position:right right !important;
@@ -157,27 +170,47 @@ body
     .aa-show-mobile-425x{
         display:block!important;
     }
+    .aa-padding{
+    padding-left: 0.25em !important;
+    padding-right: 0.25em !important;
+    }
+    .aa-link-selected:before{
+        width: 30px !important;
+    }
+    .aa-header{
+        font-size: 1.75em !important;
+    }
+    .aa-header2{
+        font-size: 2.5em !important;
+    }
+    .aa-header4{
+        font-size: 2.25em !important;
+    }
     .menuBar{
-        font-size: 0.4em !important;
+        font-size: 0.5em !important;
+        padding-top: 0.5em !important; padding-bottom: 0.5em !important;
     }
     .MainBG{
         background-position: center center !important;
         min-height: 600px !important;
     }
     .Beginners {
-        max-height: 360px !important;
+        max-height: 320px !important;
     }
     .Competitors {
-        max-height: 360px !important;
+        max-height: 320px !important;
+    }
+    .About {
+        padding: 0.5em !important;
     }
     .Accolades {
     font-size: 1.25em !important;
     }
-}
-@media only screen and (min-width:2560px) {
-    .w3-responsive-center{
-        //margin-left:10%!important;
-        //margin-right:10%!important;
+    .GalleryItem{
+        height: 240px !important;
+    }
+    .OldGlovesBG {
+        padding: 0.5em !important;
     }
 }
 

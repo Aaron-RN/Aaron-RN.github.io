@@ -159,7 +159,6 @@
 }
 .aa-padding-2{
     padding: 2.5em;
-
 }
 
 .aa-header-1{
@@ -167,7 +166,7 @@
     letter-spacing: 0.25em;
 }
 .aa-header{
-    font-size: 2.8vw;
+    font-size: 2.5em;
     letter-spacing: 0.25em;
 }
 .aa-header2{
@@ -179,7 +178,7 @@
     letter-spacing: 0.25em;
 }
 .aa-header4{
-    font-size: 5.8vw;
+    font-size: 5.5em;
     letter-spacing: 0.225em;
 }
 #NavBar{
@@ -294,7 +293,7 @@
     //background-repeat: no-repeat;
     //background-position: top left;
     //background-size:contain;
-    max-width: 1660px;
+    max-width: 100%;
     padding: 1em;//min-height: 540px;
 
 }
@@ -311,7 +310,7 @@
     //border:3px solid white;
     background-color: rgb(250,115,80);
     min-height: 560px;
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
 }
 .Gallery {
     color: rgb(37,33,40);

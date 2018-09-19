@@ -13,10 +13,15 @@ function scrollNavBars() {
     var navbar = document.getElementById("NavBar");
     var navbarMail = document.getElementById("NavMailBar");
     var navbarTitle = document.getElementById("NavBarTitle");
-    if(window.innerWidth <= 768){
+    if(window.innerWidth >= 725 && window.innerWidth < 1024){
         var navbar = document.getElementById("NavBar2");
         var navbarMail = document.getElementById("NavMailBar2");
         var navbarTitle = document.getElementById("NavBarTitle2");
+    }
+    if(window.innerWidth < 725){
+        var navbar = document.getElementById("NavBar3");
+        var navbarMail = document.getElementById("NavMailBar3");
+        var navbarTitle = document.getElementById("NavBarTitle3");
     }
     if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
         navbar.className = "navMenu" + " w3-top" + " w3-theme-d33" + " w3-animate-top" + " dbg-orange";
