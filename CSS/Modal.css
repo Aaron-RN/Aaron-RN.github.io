@@ -24,8 +24,18 @@
     height: auto;
 }
 
-@media only screen and (min-width:900px) and (max-width: 1660px) {
+
+@media only screen and (min-width:1920px) {
     .aa-modal-content{
+        margin: 0 auto;
+        padding:25px;
+        outline:0;
+        border: 1px solid #888;
+        background-color: white;
+        min-width: 1440px;
+        height: auto;
+    }
+    .aa-Sponsor-modal-content{
         margin: 0 auto;
         padding:25px;
         outline:0;
@@ -35,48 +45,125 @@
         height: 98%;
     }
 }
-@media only screen and (min-width:1661px) and (max-width: 1920px) and (orientation: portrait) {
+@media only screen and (min-width:1440px) and (max-width:1919px) {
     .aa-modal-content{
         margin: 0 auto;
-        padding:10px;
+        padding:25px;
         outline:0;
         border: 1px solid #888;
         background-color: white;
-        width: auto;
+        min-width: 1024px;
+        height: auto;
+    }
+    .aa-Sponsor-modal-content{
+        margin: 0 auto;
+        padding:25px;
+        outline:0;
+        border: 1px solid #888;
+        background-color: white;
+        min-width: 1024px;
         height: 98%;
     }
 }
-@media only screen and (max-width: 899px) and (orientation: portrait){
+@media only screen and (min-width:1366px) and (max-width:1439px) {
     .aa-modal-content{
         margin: 0 auto;
-        padding:10px;
+        padding:25px;
         outline:0;
         border: 1px solid #888;
         background-color: white;
-        width: 100%;
+        min-width: 1024px;
         height: auto;
+    }
+    .aa-Sponsor-modal-content{
+        margin: 0 auto;
+        padding:25px;
+        outline:0;
+        border: 1px solid #888;
+        background-color: white;
+        min-width: 1024px;
+        height: 98%;
+    }
+}
+@media only screen and (min-width:1024px) and (max-width:1365px) {
+    .aa-modal-content{
+        margin: 0 auto;
+        padding:25px;
+        outline:0;
+        border: 1px solid #888;
+        background-color: white;
+        width: 90%;
+        height: auto;
+    }
+    .aa-Sponsor-modal-content{
+        margin: 0 auto;
+        padding:20px;
+        outline:0;
+        border: 1px solid #888;
+        background-color: white;
+        min-width: 1024px;
+        height: 98%;
+    }
+}
+@media only screen and (min-width:725px) and (max-width:1023px) {
+    .aa-modal-content{
+        margin: 0 auto;
+        padding:15px;
+        outline:0;
+        border: 1px solid #888;
+        background-color: white;
+        width: 90%;
+        height: auto;
+    }
+    
+    .aa-Sponsor-modal-content{
+        margin: 0 auto;
+        padding:15px;
+        outline:0;
+        border: 1px solid #888;
+        background-color: white;
+        min-width: 725px;
+        height: 98%;
     }
 }
 
-@media only screen and (max-width: 48em) and (orientation: landscape) {
+@media only screen and (min-width:425px) and (max-width:724px) {
     .aa-modal-content{
         margin: 0 auto;
         padding:10px;
         outline:0;
         border: 1px solid #888;
         background-color: white;
-        width: auto;
+        width: 90%;
         height: auto;
     }
+        .aa-Sponsor-modal-content{
+        margin: 0 auto;
+        padding:15px;
+        outline:0;
+        border: 1px solid #888;
+        background-color: white;
+        width: 98%;
+        height: 98%;
+    }
 }
-@media only screen and (max-width: 43.75em) and (orientation: landscape){
+@media only screen and (max-width:424px) {
     .aa-modal-content{
         margin: 0 auto;
         padding:10px;
         outline:0;
         border: 1px solid #888;
         background-color: white;
-        width: auto;
+        width: 90%;
         height: auto;
+    }
+        .aa-Sponsor-modal-content{
+        margin: 0 auto;
+        padding:15px;
+        outline:0;
+        border: 1px solid #888;
+        background-color: white;
+        width: 98%;
+        height: 98%;
     }
 }

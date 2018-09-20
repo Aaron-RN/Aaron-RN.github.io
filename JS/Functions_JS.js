@@ -30,7 +30,11 @@ function scrollNavBars() {
         navbar.style.top = "0";
         navbarTitle.style.display="none";
     } else {
-        navbar.className = navbar.className.replace("navMenu w3-top w3-theme-d33 w3-animate-top dbg-orange", "navMenu w3-top w3-theme-d3 dbg-orange");
+        if(window.innerWidth < 725){
+            navbar.className = navbar.className.replace("navMenu w3-top w3-theme-d3m w3-animate-top dbg-orange", "navMenu w3-top w3-theme-d3 dbg-orange");
+        }
+        else {navbar.className = navbar.className.replace("navMenu w3-top w3-theme-d33 w3-animate-top dbg-orange", "navMenu w3-top w3-theme-d3 dbg-orange");
+        }
         navbarMail.className = navbarMail.className.replace("w3-bar w3-theme-d44 dbg-yellow", "w3-bar w3-theme-d4 dbg-yellow");
         navbar.style.position="absolute";
         //navbar.style.top = "-41em";
