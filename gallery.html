@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html class lang="en" style="scroll-behavior: smooth;">
+    <head>
+        <title>Kick Boxing Lessons in The Bahamas | New Providenc | MoFire Fitness</title>
+        <link rel="icon" href="Images/Individuals/45.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--        <meta name="format-detection" content="telephone=no"> //Disables Microsoft Edge's auto phone detection which turns phone numbers into links--> 
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="MoFire Fitness offers affordable rate for kickboxing lessons in Nassau, Bahamas, as well as other fitness options such as: circuit training, weight training, basic meal plans, etc...">
+        <meta name="keywords" content="MoFire, MoFire Fitness, kickboxer, Bahamian, Caribbean, Bahamas, trainer, personal trainer, fitness instructor, instructor, fitness, 242, pro">
+        <meta name="author" content="Giovanni Johnson">
+        <!--<link rel="stylesheet" type="text/css" href="CSS/w3_framework.css">-->
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <script src="https://use.fontawesome.com/c307ca9280.js"></script>
+        <!--<script src="JS/Functions_JS.js"></script>-->
+<!--        <link rel="stylesheet" type="text/css" href="CSS/Debug.css">-->
+        <link rel="stylesheet" type="text/css" href="CSS/Main.css">
+        <link rel="stylesheet" type="text/css" href="CSS/Home.css">
+        <link rel="stylesheet" type="text/css" href="CSS/Modal.css">
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|PT+Sans|Indie+Flower|Permanent+Marker|Ubuntu|Lato:400,700|Montserrat|Raleway|Economica|Asap+Condensed:400,500|IBM+Plex+Sans:700|IBM+Plex+Sans+Condensed" rel="stylesheet">
+    </head>
+    
+    <body class="w3-theme-d3" style="background-color: rgb(40,40,50);">
+    
+        <!--****//Shows this page to screen resolutions: 1440px wide and up//**-->
+<!--        <div class="w3-content aa-hide-1366x aa-hide-1024x aa-hide-tablet aa-hide-mobile aa-hide-mobile-425x" style="max-width:100%;">           -->
+        <div class="aa-hide-tablet aa-hide-mobile aa-hide-mobile-425x" style="max-width:100%;">
+            <!--Navigation Menu-->
+            <header class="navMenu w3-top w3-theme-d5 dbg-orange" id="NavBar">
+                <!--Larger Resolution Navigation Menu-->
+                <div class="w3-bar w3-theme-d4 dbg-yellow" id="NavMailBar" style="width:100%;margin:0 auto;"> 
+                    <div class="w3-right" style="margin:0em;padding-right: 2.5em;">
+                        <div class="w3-cell w3-hover-custom2 text-Lato animate-zoom-hover dbg-red" style="font-size:0.8em;" x-ms-format-detection="none"><a style="text-decoration: none;" href="mailto:GveJohnson@gmail.com?Subject=MoFire%20Fitness">(242)565-6591</a></div>
+                        <a class="w3-cell w3-hover-custom2 animate-zoom-hover dbg-red" style="margin:0 auto;padding-right:0.45em;" href="https://www.facebook.com/MoFireMMA242/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="w3-cell w3-hover-custom2 animate-zoom-hover dbg-red" style="padding-left: 0em;padding-right: 1em;" href="https://www.instagram.com/mofiremma242/?hl=en"><i class="fab fa-instagram"></i></a>
+                        <div class="w3-cell text-Lato w3-hover-custom2 animate-zoom-hover dbg-red" style="font-size:0.7em;"><a style="text-decoration: none;" href="mailto:GveJohnson@gmail.com?Subject=MoFire%20Fitness"><i class="fas fa-envelope"></i> GveJohnson@gmail.com</a></div>
+                    </div>
+                </div>
+                <div class="w3-row dbg-blue animate-zoom-hover" id="NavBarTitle" style="max-width:1024px;margin:0 auto;">
+                    <a style="text-decoration: none;" href="index.html"><div class="w3-container w3-center text-PMarker" style="font-size:1.85em;padding-top: 0.5em;text-shadow: 0px -4px 4px coral;letter-spacing: 10px;">MoFire Fitness</div></a>    
+                </div>
+                <div class="menuBar dbg-green aa-center" style="max-width:1024px; padding-top: 1em;">
+                    <a class="w3-bar-item aa-padding aa-link-selected" href="gallery.html">Gallery</a>
+                    <a class="w3-bar-item aa-padding hvr-underline-reveal w3-hover-custom animate-zoom-hover" id="navTraining" >Training</a>
+                    <a class="w3-bar-item aa-padding hvr-underline-reveal w3-hover-custom animate-zoom-hover" id="navAbout" href="#About">About</a>
+                    <a class="w3-bar-item aa-padding hvr-underline-reveal w3-hover-custom animate-zoom-hover" id="navAccolades" href="#Accolades">Accolades</a>
+                    <a class="w3-bar-item aa-button3 aa-padding hvr-underline-reveal w3-hover-custom animate-zoom-hover" id="navSponsors" onclick="ShowSponsorModal()">Sponsors</a>
+                    <a class="w3-bar-item aa-padding hvr-underline-reveal w3-hover-custom animate-zoom-hover" id="navContact" href="#Contact">Contact</a>
+                    <a class="w3-bar-item aa-padding hvr-underline-reveal w3-hover-custom animate-zoom-hover" href="book-online">Book Online</a>
+                    <div class="w3-bar-item aa-dropdown-click animate-zoom-hover">
+                        <div class="DropButton aa-button2" style="color:white;"><i class="fa fa-bars" style="font-size:1.5em;" aria-hidden="true"></i></div>
+                        <div class="DropBox w3-dropdown-content" style="background-color: rgba(80,80,80,0.6);border: 1px solid rgba(255,255,255,0.2);">
+                            <a class="Link aa-button2 w3-text-white animate-zoom-hover" href="blog.html">Blog</a>
+                            <a class="Link aa-button2 w3-text-white animate-zoom-hover" href="gallery.html">Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        
+        <!--**//Shows this page to screen resolutions: 1366px wide up to 1439px wide //**-->
+        <!--**//Shows this page to screen resolutions: 992px(1024px) wide up to 1365px wide //**-->
+
+        <!--**//Shows this page to screen resolutions: 725px wide up to 1023px wide //**-->
+        <div class="aa-hide-1920x2560 aa-hide-1440x aa-hide-1366x aa-hide-1024x aa-hide-mobile aa-hide-mobile-425x">           
+        <!--Navigation Menu-->
+           <header class="navMenu w3-top w3-theme-d3 dbg-orange" id="NavBar2">
+                <!--Larger Resolution Navigation Menu-->
+                <div class="w3-bar w3-theme-d4 dbg-yellow" id="NavMailBar2" style="width:100%;margin:0 auto;"> 
+                    <div class="w3-right" style="margin:0em;padding-right: 2.5em;">
+                        <div class="w3-cell w3-hover-custom2 text-Lato animate-zoom-hover dbg-red" style="font-size:0.8em;" x-ms-format-detection="none"><a style="text-decoration: none;" href="mailto:GveJohnson@gmail.com?Subject=MoFire%20Fitness">(242)565-6591</a></div>
+                        <a class="w3-cell w3-hover-custom2 animate-zoom-hover dbg-red" style="margin:0 auto;padding-right:0.45em;" href="https://www.facebook.com/MoFireMMA242/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="w3-cell w3-hover-custom2 animate-zoom-hover dbg-red" style="padding-left: 0em;padding-right: 1em;" href="https://www.instagram.com/mofiremma242/?hl=en"><i class="fab fa-instagram"></i></a>
+                        <div class="w3-cell text-Lato w3-hover-custom2 animate-zoom-hover dbg-red" style="font-size:0.7em;"><a style="text-decoration: none;" href="mailto:GveJohnson@gmail.com?Subject=MoFire%20Fitness"><i class="fas fa-envelope"></i> GveJohnson@gmail.com</a></div>
+                    </div>
+                </div> 
+                <div class="w3-row dbg-blue animate-zoom-hover" id="NavBarTitle2" style="max-width:725px;margin:0 auto;">
+                    <a style="text-decoration: none;" href="index.html"><div class="w3-container w3-center text-PMarker" style="font-size:1.5em;padding-top: 0.5em;text-shadow: 0px -4px 4px coral;letter-spacing: 10px;">MoFire Fitness</div></a>    
+                </div>
+                <div class="menuBar dbg-green aa-center" style="max-width:725px; padding-top: 1em;">
+                    <a class="w3-bar-item aa-padding aa-link-selected" href="gallery.html">Gallery</a>
+                    <a class="w3-bar-item aa-padding hvr-underline-reveal w3-hover-custom animate-zoom-hover" id="navTraining" >Training</a>
+                    <a class="w3-bar-item aa-padding hvr-underline-reveal w3-hover-custom animate-zoom-hover" id="navAbout" href="#About2">About</a>
+                    <a class="w3-bar-item aa-padding hvr-underline-reveal w3-hover-custom animate-zoom-hover" id="navAccolades" href="#Accolades2">Accolades</a>
+                    <a class="w3-bar-item aa-padding hvr-underline-reveal w3-hover-custom animate-zoom-hover" id="navContact" href="#Contact2">Contact</a>
+                    <a class="w3-bar-item aa-padding hvr-underline-reveal w3-hover-custom animate-zoom-hover" href="book-online">Book Online</a>
+                    <div class="w3-bar-item aa-dropdown-click animate-zoom-hover">
+                        <div class="DropButton aa-button2" style="color:white;"><i class="fa fa-bars" style="font-size:1.5em;" aria-hidden="true"></i></div>
+                        <div class="DropBox w3-dropdown-content" style="right: 0; background-color: rgba(80,80,80,0.6);border: 1px solid rgba(255,255,255,0.2);">
+                            <a class="Link aa-button2 w3-text-white animate-zoom-hover" id="navSponsors" onclick="ShowSponsorModal()">Sponsors</a>
+                            <a class="Link aa-button2 w3-text-white animate-zoom-hover" href="blog.html">Blog</a>
+                            <a class="Link aa-button2 w3-text-white animate-zoom-hover" href="gallery.html">Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+ 
+         <!--**//Shows this page to screen resolutions: 425px wide up to 724px wide //**-->
+        <div class="aa-hide-1920x2560 aa-hide-1440x aa-hide-1366x aa-hide-1024x aa-hide-tablet">           
+        <!--Navigation Menu-->
+           <header class="navMenu w3-top w3-theme-d3m dbg-orange" id="NavBar3">
+                <!--Larger Resolution Navigation Menu-->
+                <div class="w3-bar w3-theme-d4 dbg-yellow" id="NavMailBar3" style="width:100%;margin:0 auto;"> 
+                    <div class="w3-right" style="margin:0em;padding-right: 1em;">
+                        <div class="w3-cell w3-hover-custom2 text-Lato animate-zoom-hover dbg-red" style="font-size:0.6em;" x-ms-format-detection="none"><a style="text-decoration: none;" href="mailto:GveJohnson@gmail.com?Subject=MoFire%20Fitness">(242)565-6591</a></div>
+                        <a class="w3-cell w3-hover-custom2 animate-zoom-hover dbg-red" style="margin:0 auto;padding-right:0.45em;" href="https://www.facebook.com/MoFireMMA242/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="w3-cell w3-hover-custom2 animate-zoom-hover dbg-red" style="padding-left: 0em;padding-right: 0.5em;" href="https://www.instagram.com/mofiremma242/?hl=en"><i class="fab fa-instagram"></i></a>
+                        <div class="w3-cell text-Lato w3-hover-custom2 animate-zoom-hover dbg-red" style="font-size:0.6em;"><a style="text-decoration: none;" href="mailto:GveJohnson@gmail.com?Subject=MoFire%20Fitness"><i class="fas fa-envelope"></i> GveJohnson@gmail.com</a></div>
+                    </div>
+                </div>
+                <div class="w3-row dbg-blue animate-zoom-hover" id="NavBarTitle3" style="max-width:425px;margin:0 auto;">
+                    <a style="text-decoration: none;" href="index.html"><div class="w3-container w3-center text-PMarker" style="font-size:1em;padding-top: 0.5em;text-shadow: 0px -4px 4px coral;letter-spacing: 10px;">MoFire Fitness</div></a>    
+                </div>
+                <div class="menuBar dbg-green aa-center" style="max-width:425px; padding-top: 0.5em;">
+                    <a class="w3-bar-item aa-padding aa-link-selected" href="gallery.html">Gallery</a>
+                    <a class="w3-bar-item aa-padding hvr-underline-reveal w3-hover-custom animate-zoom-hover" id="navContact" href="#Contact3">Contact</a>
+                    <a class="w3-bar-item aa-padding hvr-underline-reveal w3-hover-custom animate-zoom-hover" href="book-online">Book Online</a>
+                    <div class="w3-bar-item aa-dropdown-click animate-zoom-hover">
+                        <div class="DropButton aa-button2" style="color:white;"><i class="fa fa-bars" style="font-size:1.5em;" aria-hidden="true"></i></div>
+                        <div class="DropBox w3-dropdown-content" style="right: 0; background-color: rgba(80,80,80,0.9);border: 1px solid rgba(255,255,255,0.2);">
+                            <a class="Link aa-button2 w3-text-white animate-zoom-hover" id="navTraining" >Training</a>
+                            <a class="Link aa-button2 w3-text-white animate-zoom-hover" id="navAbout" href="#About3">About</a>
+                            <a class="Link aa-button2 w3-text-white animate-zoom-hover" id="navAccolades" href="#Accolades3">Accolades</a>
+                            <a class="Link aa-button2 w3-text-white animate-zoom-hover" id="navSponsors" onclick="ShowSponsorModal()">Sponsors</a>
+                            <a class="Link aa-button2 w3-text-white animate-zoom-hover" href="blog.html">Blog</a>
+                            <a class="Link aa-button2 w3-text-white animate-zoom-hover" href="gallery.html">Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            </header> 
+        </div>
+        
+        <div class="GalleryBG" style="height: 1250px;width: 100%; position: absolute;top: 0;left: 0;z-index: -1;"></div>
+        
+        <div class="w3-container w3-center" style="margin-top: 230px;padding: 0;">
+            <header class="text-BebasNeueThick aa-header4" style="background-color: rgba(40,40,40,0.6);"><div class="aa-round-bottom aa-center" style="background-color: rgba(20,20,20,0.2);width: 40%;">Videos</div></header>
+        </div>
+        <div class="w3-container" style="margin-top: 1em;background-color: rgba(80,40,40,0.5);">
+            <div class="aa-center" style="background-color: rgba(40,40,40,0.6);width: 60%;">
+                <iframe id="MainVideo" width="90%" height="420px" src="https://www.youtube.com/embed/4W_PIOUlwS8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="w3-container" style="height: 2.5px;background-color:rgb(255,255,255);margin-top: 2em;"></div>
+        
+        <div class="w3-container w3-center">
+            <header class="text-BebasNeueThick aa-header4">Bouts</header>
+        </div>
+        
+        <div class="w3-container" style="height: 2.5px;background-color:rgb(255,255,255);"></div>
+        
+        <div class="w3-container w3-cell-row" style="padding: 2em;margin-bottom: 2em;background-color: rgba(40,40,40,0.6);">
+            <div class="w3-center w3-cell w3-mobile">
+                <iframe class="VideoEmbedding" width="100%" height="220px" src="https://www.youtube.com/embed/_e7nzp6zdyA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            
+            <div class="w3-center w3-cell w3-mobile">
+                <iframe class="VideoEmbedding" width="100%" height="220px" src="https://www.youtube.com/embed/xkaETG0dJ8E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            
+            <div class="w3-center w3-cell w3-mobile">
+                <iframe class="VideoEmbedding" width="100%" height="220px" src="https://www.youtube.com/embed/rWKhfJLOndY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            
+            <div class="w3-center w3-cell w3-mobile">
+                <iframe class="VideoEmbedding" width="100%" height="220px" src="https://www.youtube.com/embed/Z6zOVGFOUq8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div> 
+            
+<!--
+            <div class="w3-center w3-cell w3-mobile">
+                <iframe class="VideoEmbedding" width="100%" height="220px" src="https://www.youtube.com/embed/XM2BRZO_6j0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div> 
+-->
+        </div>
+
+          <div class="w3-container" style="height: 2.5px;background-color:rgb(255,255,255);margin-top: 2em;"></div>
+        
+        <div class="w3-container w3-center">
+            <header class="text-BebasNeueThick aa-header3">Interviews</header>
+        </div>
+        
+        <div class="w3-container" style="height: 2.5px;background-color:rgb(255,255,255);"></div>
+        
+        <div class="w3-container w3-cell-row" style="padding: 2em;margin-bottom: 2em;background-color: rgba(20,20,20,0.8);">
+            <div class="w3-center w3-cell w3-mobile">
+                <iframe class="VideoEmbedding" width="100%" height="420px" src="https://www.youtube.com/embed/5U1noMFC01k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            
+            <div class="w3-center w3-cell w3-mobile">
+                <iframe class="VideoEmbedding" width="100%" height="420px" src="https://www.youtube.com/embed/XM2BRZO_6j0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+      
+        
+        <!--Footer Items-->
+        <!--All resolutions 1024px and above--> 
+        <div id="Contact" class="aa-hide-mobile aa-hide-mobile-425x" style="max-width:100%;">
+        <div id="Contact2" style="margin:0;padding: 0;"></div>
+        <footer class="bottom aa-center w3-container w3-theme-d44" style="padding-top:1.5em;padding-bottom: 1.5em;">
+            <div class="aa-center" style="max-width: 1024px;">
+            <div class="w3-cell-row w3-text-red">
+                <div class="w3-half">
+                    <div class="w3-container w3-left-align w3-right text-Condensed" style="margin-right: 6em;">
+                        <div class="aa-header">Contact Me</div>
+                        <p class="w3-large" style="width: 240px;">WRITE OR CALL ME IF YOU HAVE MORE QUESTIONS</p>
+                        <div class="w3-large w3-hover-custom2 animate-zoom-hover" style="padding: 0;"><a style="text-decoration: none;" href="mailto:GveJohnson@gmail.com?Subject=MoFire%20Fitness"><i class="fas fa-envelope"></i> GveJohnson@gmail.com</a></div>
+                        <div class="w3-xlarge w3-text-white" x-ms-format-detection="none"><a style="text-decoration: none;" href="mailto:GveJohnson@gmail.com?Subject=MoFire%20Fitness">(242) 565-6591</a></div>
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <form class="w3-container text-Montserrat" style="width:75%;margin-left: 6em;">
+                      <div class="w3-section">      
+                        <input class="w3-input aa-bg-coral" style="padding:5px;margin:0;" name="name"  placeholder="Name*" type="text" required>
+                      </div>
+                      <div class="w3-section">      
+                        <input class="w3-input aa-bg-coral" style="padding:5px;margin:0;" name="email"  placeholder="Email*" type="text" required>
+                      </div>
+                      <div class="w3-section">      
+                        <input class="w3-input aa-bg-coral" style="padding:5px;margin:0;" name="subject"  placeholder="Subject" type="text" required>
+                      </div>
+                      <div class="w3-section">      
+                        <textarea class="w3-input aa-bg-coral" name="message" placeholder="Message (Optional)" rows="4" maxlength="100" required></textarea>
+                      </div>
+                      <div class="w3-row w3-right">
+                          <input type="submit" value="Send" name="Submit" class="aa-button2 w3-round-large animate-zoom-hover aa-text-coral" style="padding: 0.5em;">
+                        </div>
+                    </form>
+                </div>
+            </div>
+                
+            <div class="w3-row">
+                <div class="w3-half w3-right-align">
+                    <div class="w3-row">
+                        <div class="w3-cell" style="width: 50%;"></div>
+                        <div class="w3-cell w3-xxlarge w3-hover-custom2 animate-zoom-hover" style="margin:0 auto;padding-right:0.45em;"><a href="https://www.facebook.com/MoFireMMA242/"><i class="fab fa-facebook-f"></i></a></div>
+                        <div class="w3-cell w3-xxlarge w3-hover-custom2 animate-zoom-hover" style="padding-left: 0em;padding-right: 1em;"><a href="https://www.instagram.com/mofiremma242/?hl=en"><i class="fab fa-instagram"></i></a></div>
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <div class="w3-container">
+                        <div style="font-size:0.85em;margin-top:2em;">©2018 Giovanni Errisson-Johnson</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+        </div>
+    
+        <!--All resolutions below 725px--> 
+        <div id="Contact3" class="aa-hide-1920x2560 aa-hide-1440x aa-hide-1366x aa-hide-1024x aa-hide-tablet" style="max-width:100%;">
+        <footer class="bottom aa-center w3-container w3-theme-d44" style="padding-top:1.5em;padding-bottom: 1.5em;">
+            <div class="aa-center" style="max-width: 425px;">
+            <div class="w3-row w3-text-red">
+                <div>
+                    <div class="w3-container aa-center text-Condensed">
+                        <div class="aa-header">Contact Me</div>
+                        <p class="w3-large aa-center" style="width: 240px;">WRITE OR CALL ME IF YOU HAVE MORE QUESTIONS</p>
+                        <div class="w3-large w3-hover-custom2 animate-zoom-hover" style="padding: 0;"><a style="text-decoration: none;" href="mailto:GveJohnson@gmail.com?Subject=MoFire%20Fitness"><i class="fas fa-envelope"></i> GveJohnson@gmail.com</a></div>
+                        <div class="w3-xlarge w3-text-white" x-ms-format-detection="none"><a style="text-decoration: none;" href="mailto:GveJohnson@gmail.com?Subject=MoFire%20Fitness">(242) 565-6591</a></div>
+                    </div>
+                </div>
+                <div>
+                    <form class="w3-container aa-center text-Montserrat" style="width:75%;">
+                      <div class="w3-section">      
+                        <input class="w3-input aa-bg-coral" style="padding:5px;margin:0;" name="name"  placeholder="Name*" type="text" required>
+                      </div>
+                      <div class="w3-section">      
+                        <input class="w3-input aa-bg-coral" style="padding:5px;margin:0;" name="email"  placeholder="Email*" type="text" required>
+                      </div>
+                      <div class="w3-section">      
+                        <input class="w3-input aa-bg-coral" style="padding:5px;margin:0;" name="subject"  placeholder="Subject" type="text" required>
+                      </div>
+                      <div class="w3-section">      
+                        <textarea class="w3-input aa-bg-coral" name="message" placeholder="Message (Optional)" rows="4" maxlength="100" required></textarea>
+                      </div>
+                      <div class="w3-row w3-right">
+                          <input type="submit" value="Send" name="Submit" class="aa-button2 w3-round-large animate-zoom-hover aa-text-coral" style="padding: 0.5em;">
+                        </div>
+                    </form>
+                </div>
+            </div>
+                
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-row">
+                        <div class="w3-cell" style="width: 50%;"></div>
+                        <div class="w3-cell w3-xxlarge w3-hover-custom2 animate-zoom-hover" style="margin:0 auto;padding-right:0.45em;"><a href="https://www.facebook.com/MoFireMMA242/"><i class="fab fa-facebook-f"></i></a></div>
+                        <div class="w3-cell w3-xxlarge w3-hover-custom2 animate-zoom-hover" style="padding-left: 0em;padding-right: 1em;"><a href="https://www.instagram.com/mofiremma242/?hl=en"><i class="fab fa-instagram"></i></a></div>
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <div class="w3-container">
+                        <div style="font-size:0.85em;margin-top:2em;">©2018 Giovanni Errisson-Johnson</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+        </div>
+      
+
+        <!--Modal to Display Fullscreen Clicked Images-->      
+        <div id="ImgModal" class="aa-modal" onclick="this.style.display='none'">
+            <div class="aa-modal-content Center w3-animate-zoom">
+                <span class="w3-closebtn w3-container w3-display-topright w3-text-red w3-hover-red w3-padding-16">&times;</span>
+                <img id="ImgModalSrc" style="max-width:100%;" />
+            </div>
+        </div>
+        
+        <div id="SponsorModal" class="aa-modal" onclick="this.style.display='none'">
+            <div class="aa-hide-mobile aa-hide-mobile-425x">
+                <div class="aa-Sponsor-modal-content Center w3-animate-zoom text-BebasNeueThick" style="margin-top: 2em;max-width: 1024px;overflow: scroll;">
+                    <span class="w3-closebtn w3-container w3-display-topright w3-text-red w3-hover-red w3-padding-16">&times;</span>
+                    <div class="w3-row">
+                        <div class="w3-container w3-cell-middle w3-cell SponsorLarge aa-center"><img src="Images/Individuals/Sponsors/Island_Fiya.webp" style="max-width:100%;" /></div>
+                        <div class="w3-container w3-cell-middle w3-cell SponsorLarge SponsorBG aa-center w3-xxlarge Uppercase w3-text-gray">Become<br>A<br>Sponsor</div>
+                    </div>
+                    <div class="w3-row">
+                        <div class="aa-button3 w3-container w3-cell-middle w3-cell SponsorMedium aa-center"><a href="http://avenii.com/" target="_blank"><img src="Images/Individuals/Sponsors/Avenii.webp" style="max-width:100%;" /></a></div>
+                        <div class="w3-container w3-cell-middle w3-cell SponsorMedium SponsorBG aa-center w3-xlarge Uppercase w3-text-gray">Become<br>A<br>Sponsor</div>
+                        <div class="w3-container w3-cell-middle w3-cell SponsorMedium SponsorBG aa-center w3-xlarge Uppercase w3-text-gray">Become<br>A<br>Sponsor</div>
+                    </div>
+                    <div class="w3-row">
+                        <div class="w3-container w3-cell-middle w3-cell SponsorSmall aa-center"><img src="Images/Individuals/Sponsors/CheeseCake.webp" style="max-width:100%;" /></div>
+                        <div class="w3-container w3-cell-middle w3-cell SponsorSmall SponsorBG aa-center w3-large Uppercase w3-text-gray">Become<br>A<br>Sponsor</div>
+                        <div class="w3-container w3-cell-middle w3-cell SponsorSmall SponsorBG aa-center w3-large Uppercase w3-text-gray">Become<br>A<br>Sponsor</div>
+                        <div class="w3-container w3-cell-middle w3-cell SponsorSmall SponsorBG aa-center w3-large Uppercase w3-text-gray">Become<br>A<br>Sponsor</div>
+                    </div>
+                </div>
+            </div>
+            <div class="aa-hide-1920x2560 aa-hide-1440x aa-hide-1366x aa-hide-1024x">
+                <div class="aa-Sponsor-modal-content Center w3-animate-zoom text-BebasNeueThick" style="margin-top: 2em;max-width: 1024px;overflow: scroll;">
+                    <span class="w3-closebtn w3-container w3-display-topright w3-text-red w3-hover-red w3-padding-16">&times;</span>
+                    <div class="w3-row">
+                        <div class="w3-container w3-cell-middle w3-cell w3-mobile SponsorMedium aa-center"><img src="Images/Individuals/Sponsors/Island_Fiya.webp" style="max-width:100%;" /></div>
+                    </div>
+                    <div class="w3-row">
+                        <div class="aa-button3 w3-container w3-cell-middle w3-cell w3-mobile SponsorMedium aa-center"><a href="http://avenii.com/" target="_blank"><img src="Images/Individuals/Sponsors/Avenii.webp" style="max-width:100%;" /></a></div>
+                    </div>
+                    <div class="w3-row">
+                        <div class="w3-container w3-cell-middle w3-cell w3-mobile SponsorMedium aa-center"><img src="Images/Individuals/Sponsors/CheeseCake.webp" style="max-width:100%;" /></div>
+                        <div class="w3-container w3-cell-middle w3-cell SponsorSmall SponsorBG aa-center w3-large Uppercase w3-text-gray">Become<br>A<br>Sponsor</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--JavaScript Code-->
+        <script src="JS/DropMenu_JS.js"></script>
+        <script src="JS/Functions_JS.js"></script>
+        
+    </body>
+    
+</html>

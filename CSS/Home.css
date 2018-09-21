@@ -1,6 +1,7 @@
 .w3-theme-d1 {color:#fff !important; background-color:#d62d2d !important}
 .w3-theme-d2 {color:#fff !important; background-color:#932828 !important}
 .w3-theme-d3 {color:#fff; background-color: rgba(60,60,60,0.5);}
+.w3-theme-d5 {color:#fff; background-color: rgba(90,90,90,0.6);}
 .w3-theme-d3m {color:#fff; background-color: rgba(60,60,60,0.8);}
 .w3-theme-d33 {color:#fff; background-color: rgba(50,50,50,0.9);}
 .w3-theme-d4 {color:#fff; background-color: rgba(30,30,30,0.6);padding-top: 0.25em;padding-bottom: 0.25em;}
@@ -133,9 +134,13 @@
 .aa-round{
     border-radius: 2.5em;
 }
+.aa-round-top{
+    border-radius: 2.5em 2.5em 0em 0em;
+}
 .aa-round-bottom{
     border-radius: 0px 0px 2.5em 2.5em;
 }
+
 .aa-round-left{
     border-radius: 1em 0px 0px 1em;
 }
@@ -267,7 +272,13 @@
     min-height: 1103px;
     image-rendering: crisp-edges;
 }
-
+.GalleryBG{
+    background-image: url(../Images/Individuals/bg2.jpg);//21,47,9,41,16,32
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size:cover;
+    image-rendering: crisp-edges;
+}
 .Beginners {
     background-image: url(../Images/Individuals/50%20-%20Copy.jpg);
     background-repeat: no-repeat;

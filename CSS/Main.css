@@ -93,6 +93,18 @@ body
     .aa-show-1024x{
         display:block!important;
     }
+    .Gallery {
+        max-height: 600px !important;
+    }
+    .GalleryItem{
+        height: 300px !important;    
+    }
+    .Gio1024{
+        margin-left:-40em !important;
+    }
+    .Video1024{
+        margin-left:21em !important;
+    }
 }
 @media only screen and (min-width:725px) and (max-width:1023px) {
     .aa-hide-tablet{

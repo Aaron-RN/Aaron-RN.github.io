@@ -6,6 +6,7 @@ dropBoxes = document.querySelectorAll(".DropBox");
 for(var i = 0; i < dropButtons.length; i++)
     {
         dropButtons[i].addEventListener("click", function(e) {DropMenuToggle(e)});
+        dropBoxes[i].addEventListener("click", function(e) {DropMenuClose(e)});
         dropBoxes[i].addEventListener("blur", function(e) {DropMenuClose(e)});
         dropBoxes[i].addEventListener("mouseleave", function(e) {DropMenuClose(e)});
 //        dropButtons[i].addEventListener("mouseover", function(e) {DropMenuOpen(e)});
