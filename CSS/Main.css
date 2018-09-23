@@ -69,6 +69,10 @@ body
     .aa-show-1920x2560{
         display:block!important;
     }
+    #MainVideo{
+        width: 50%;
+        height: 420px;
+    }
 }
 @media only screen and (min-width:1440px) and (max-width:1919px) {
     .aa-hide-1440x{
@@ -77,6 +81,10 @@ body
     .aa-show-1440x{
         display:block!important;
     }
+    #MainVideo{
+        width: 50%;
+        height: 420px;
+    }
 }
 @media only screen and (min-width:1366px) and (max-width:1439px) {
     .aa-hide-1366x{
@@ -84,6 +92,10 @@ body
     }    
     .aa-show-1366x{
         display:block!important;
+    }
+    #MainVideo{
+        width: 50%;
+        height: 420px;
     }
 }
 @media only screen and (min-width:1024px) and (max-width:1365px) {
@@ -105,6 +117,10 @@ body
     .Video1024{
         margin-left:21em !important;
     }
+    #MainVideo{
+        width: 50%;
+        height: 420px;
+    }
 }
 @media only screen and (min-width:725px) and (max-width:1023px) {
     .aa-hide-tablet{
@@ -117,6 +133,10 @@ body
     padding-left: 0.5em !important;
     padding-right: 0.5em !important;
     }
+    #MainVideo{
+        width: 50%;
+        height: 420px;
+    }    
     .MainBG{
         min-height: 800px !important;
     }
@@ -150,6 +170,10 @@ body
     }
     .aa-header4{
         font-size: 2.75em !important;
+    }
+    #MainVideo{
+        width: 58%;
+        height: 320px;
     }
     .menuBar{
         font-size: 0.5em !important;
@@ -201,6 +225,10 @@ body
     .menuBar{
         font-size: 0.5em !important;
         padding-top: 0.5em !important; padding-bottom: 0.5em !important;
+    }
+    #MainVideo{
+        width: 90%;
+        height: 320px;
     }
     .MainBG{
         background-position: center center !important;

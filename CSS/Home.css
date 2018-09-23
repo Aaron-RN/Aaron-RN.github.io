@@ -147,6 +147,10 @@
 .aa-round-right{
     border-radius: 0px 1em 1em 0px;
 }
+
+.aa-round-bRight{
+    border-radius: 2px 2px 0.5em 2px;
+}
 .menuBar
 {
     font-size: 0.7em;

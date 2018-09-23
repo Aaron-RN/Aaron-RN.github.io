@@ -1,3 +1,8 @@
+var PageBody = document.getElementsByTagName("body")[0];
+var GalleryButton = document.getElementById("SwitchGallery");
+if(GalleryButton){GalleryButton.addEventListener("click", function() {switchGallery()});}
+var VideosGallery = document.getElementById("VideoGallery");
+var PicturesGallery = document.getElementById("PictureGallery");
 var trainingPage = new Array();
 trainingPage = document.querySelectorAll("#navTraining");
 
@@ -25,6 +30,7 @@ function scrollNavBars() {
     }
     if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
         navbar.className = "navMenu" + " w3-top" + " w3-theme-d33" + " w3-animate-top" + " dbg-orange";
+        navbar.className = "navMenu" + " w3-top" + " w3-theme-d33" + " w3-animate-top" + " dbg-orange";
         navbarMail.className = "w3-bar" + " w3-theme-d44" + " dbg-yellow";
         navbar.style.position="fixed";
         navbar.style.top = "0";
@@ -33,7 +39,9 @@ function scrollNavBars() {
         if(window.innerWidth < 725){
             navbar.className = navbar.className.replace("navMenu w3-top w3-theme-d3m w3-animate-top dbg-orange", "navMenu w3-top w3-theme-d3 dbg-orange");
         }
-        else {navbar.className = navbar.className.replace("navMenu w3-top w3-theme-d33 w3-animate-top dbg-orange", "navMenu w3-top w3-theme-d3 dbg-orange");
+        else {
+            if(PageBody.classList.contains('GalleryPage')){navbar.className = navbar.className.replace("navMenu w3-top w3-theme-d33 w3-animate-top dbg-orange", "navMenu w3-top w3-theme-d5 dbg-orange");}
+            else{navbar.className = navbar.className.replace("navMenu w3-top w3-theme-d33 w3-animate-top dbg-orange", "navMenu w3-top w3-theme-d3 dbg-orange");}
         }
         navbarMail.className = navbarMail.className.replace("w3-bar w3-theme-d44 dbg-yellow", "w3-bar w3-theme-d4 dbg-yellow");
         navbar.style.position="absolute";
@@ -57,6 +65,14 @@ function scrollToPage(pageSelected) {
         window.scrollBy(0 , scrollSpeed);
         scrolledDistance += scrollSpeed;
     }  
+}
+
+function switchGallery(){
+    VideosGallery.classList.toggle("w3-hide");
+    PicturesGallery.classList.toggle("w3-hide");
+    GalleryButton.classList.toggle("w3-animate-opacity");
+    if(VideosGallery.classList.contains('w3-hide')){GalleryButton.innerHTML="Stills";}
+    else{GalleryButton.innerHTML="Videos";}
 }
 
 /*Gallery Page Functions*/

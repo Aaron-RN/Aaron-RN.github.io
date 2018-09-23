@@ -1,0 +1,22 @@
+.w3-theme-d1 {color:#fff !important; background-color:#d62d2d !important}
+.w3-theme-d2 {color:#fff !important; background-color:#932828 !important}
+.w3-theme-d3 {color:#fff; background-color: rgba(0,0,0,0.6);}
+.w3-theme-d3m {color:#fff; background-color: rgba(0,0,0,0.8);}
+.w3-theme-d33 {color:#fff; background-color: rgba(50,50,50,0.9);}
+.w3-theme-d4 {color:#fff; background-color: rgba(50,50,50,0.6);padding-top: 0.25em;padding-bottom: 0.25em;}
+.w3-theme-d44 {color:#fff; background-color: rgba(40,40,40,0.9);padding-top: 0.25em;padding-bottom: 0.25em;}
+
+
+.aa-black{
+    background-color: rgba(30,30,30,0.9);
+    border: 2px solid black;
+}
+
+.BlogBG {
+    background-image: url(../Images/Individuals/13.jpg);
+    background-repeat: no-repeat;
+    background-position:top center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
