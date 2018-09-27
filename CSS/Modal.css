@@ -32,9 +32,9 @@
         outline:0;
         border: 1px solid #888;
         background-color: white;
-        min-width: 1440px;
+        //min-width: 1440px;
         height: auto;
-        max-height: 98%;
+        max-height: auto;
     }
     .aa-Sponsor-modal-content{
         margin: 0 auto;
