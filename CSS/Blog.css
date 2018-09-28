@@ -18,9 +18,13 @@
     //border: 2px solid black;
 }
 
+.aa-text-hot{
+    color:white;
+    text-shadow: -2px 2px black;
+}
 
 .BlogBG {
-    background-image: url(../Images/Individuals/33.jpg);
+    background-image: url(../Images/Individuals/66.jpg);
     background-repeat: no-repeat;
     background-position:top center;
     background-attachment: fixed;
