@@ -33,3 +33,15 @@
     -moz-background-size: cover;
     -o-background-size: cover;
 }
+@media only screen and (max-width:424px) {
+    .BlogBG {
+        background-image: url(../Images/Individuals/66-sml.jpg);
+        background-repeat: no-repeat;
+        background-position:top center;
+        background-attachment: fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }   
+}
