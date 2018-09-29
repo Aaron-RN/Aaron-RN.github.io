@@ -24,12 +24,26 @@
 }
 
 .BlogBG {
+    background-color: rgb(40,40,50);
     background-image: url(../Images/Individuals/66.jpg);
     background-repeat: no-repeat;
     background-position:top center;
     background-attachment: fixed;
-    background-size: 100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+@media only screen and (max-width:425px){
+    .BlogBG {
+        background-image: url(../Images/Individuals/66-sml.jpg);
+        background-repeat: no-repeat;
+        background-position:top center;
+        background-attachment: fixed;
+        background-size: 100%;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+    }   
 }
