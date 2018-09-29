@@ -29,11 +29,12 @@
     background-repeat: no-repeat;
     background-position:top center;
     background-attachment: fixed;
-    background-size: auto;
-    -webkit-background-size: auto;
-    -moz-background-size: auto;
-    -o-background-size: auto;
-    min-height: none;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    max-width: 1660px;
+    min-height: 1108px;
 }
 .BlogBody{
     margin-top: 13em;overflow-x: hidden;max-width:1260px;
@@ -42,13 +43,13 @@
 @media only screen and (max-width:425px){
     .BlogBG {
         background-image: url(../Images/Individuals/23.jpg);
-        background-repeat: repeat;
+        background-repeat: no-repeat;
         background-position:center;
         background-attachment: fixed;
-        background-size: auto;
+        background-size: cover;
         -webkit-background-size: cover;
-        -moz-background-size: auto;
-        -o-background-size: auto;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         min-height: 600px;
     }
     .BlogBody{
