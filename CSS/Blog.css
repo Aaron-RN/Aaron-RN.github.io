@@ -33,7 +33,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
 }
-@media only screen and (max-width:424px) {
+@media only screen and (min-width:1px) and (max-width:424px) {
     .BlogBG {
         background-image: url(../Images/Individuals/66-sml.jpg);
         background-repeat: no-repeat;
