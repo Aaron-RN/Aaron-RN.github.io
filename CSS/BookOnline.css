@@ -79,7 +79,9 @@
     background-attachment: fixed;
     background-size: cover;
     background-color: whitesmoke;
-
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .downArrow::after{

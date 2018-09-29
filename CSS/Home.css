@@ -272,6 +272,9 @@ a{
     background-repeat: no-repeat;
     background-position: top center;
     background-size:cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     max-width: 1660px;
     min-height: 1103px;
     image-rendering: crisp-edges;
@@ -281,6 +284,9 @@ a{
     background-repeat: no-repeat;
     background-position: 100% 50%;
     background-size:cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     image-rendering: crisp-edges;
 }
 .Beginners {
@@ -288,6 +294,9 @@ a{
     background-repeat: no-repeat;
     background-position:center center;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     padding: 1em;max-height: 560px;
     box-shadow:0px 0px 25px 1px rgba(0,0,0,0.5);
 }
@@ -297,6 +306,9 @@ a{
     background-repeat: no-repeat;
     background-position:center center;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     padding: 1em;max-height: 560px;
     box-shadow:0px 0px 25px 1px rgba(0,0,0,0.5);
 
@@ -322,6 +334,9 @@ a{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     box-shadow:0px 0px 25px 1px rgba(0,0,0,0.5);
     //border:3px solid white;
     background-color: rgb(250,115,80);
@@ -350,6 +365,9 @@ a{
     background-position:right top;
     background-attachment: fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     padding: 1em;min-height: 660px;
     box-shadow:0px 0px 25px 1px rgba(0,0,0,0.5);
 
