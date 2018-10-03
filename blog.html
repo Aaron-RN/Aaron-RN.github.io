@@ -24,7 +24,15 @@
     </head>
     
     <body class="w3-theme-d3 BlogBG">
-    
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
         <!--****//Shows this page to screen resolutions: 1440px wide and up//**-->
 <!--        <div class="w3-content aa-hide-1366x aa-hide-1024x aa-hide-tablet aa-hide-mobile aa-hide-mobile-425x" style="max-width:100%;">           -->
         <div class="aa-hide-tablet aa-hide-mobile aa-hide-mobile-425x" style="max-width:100%;">
@@ -151,14 +159,11 @@
         <div class="w3-col l8 s12">
           <!-- Blog entry -->
           <div class="w3-card-4 w3-margin aa-black">
+            <div class="w3-container">
+              <h3><b>Interview with Blanc Notes</b>, <span class="w3-opacity" style="font-size: 0.8em;">January 29, 2018</span></h3>
+            </div>
             <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/382836752&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
             <div class="w3-container">
-              <h3><b>Interview with Blanc Notes</b></h3>
-              <h5>Title description, <span class="w3-opacity">January 29, 2018</span></h5>
-            </div>
-
-            <div class="w3-container">
-                <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper.</p>
                 <div class="w3-row">
                     <div class="w3-col m8 s12">
                         <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
@@ -175,13 +180,11 @@
           <div class="w3-card-4 w3-margin aa-black">
 <!--          <img src="Images/Individuals/21-blog.jpg" alt="21" style="width:100%;">-->
             <div class="w3-container">
-              <h3><b>Interview with Kimron Corion</b></h3>
-              <h5>Title description, <span class="w3-opacity">January 29, 2018</span></h5>
+              <h3><b>Interview with Kimron Corion</b>, <span class="w3-opacity" style="font-size: 0.8em;">January 29, 2018</span></h3>
             </div>
 
             <div class="w3-container">
                 <img src="Images/Individuals/Kimron.jpg" alt="21" style="max-width:320px;float: left;padding-right: 20px;padding-bottom: 10px;">
-                <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper.</p>
               <div class="w3-row">
                 <div class="w3-col m8 s12">
                   <p><button class="w3-button w3-padding-large w3-white w3-border"><b><a target="_blank" href="http://www.kimroncorion.com/bahamian-giovanni-errission-johnson-became-full-contact-kick-boxer/" style="text-decoration: none;">READ MORE »</a></b></button></p>
@@ -192,6 +195,26 @@
               </div>
             </div>
           </div>
+            
+            <div class="w3-card w3-margin aa-black">
+                <div class="w3-container">
+                    <div class="w3-container">
+                        <h3 class="text-IBMCondensed aa-center">Join our mailing list. Never miss an update.</h3>
+                    </div>
+                    <form action="PHP/Email.php" method="post" class="w3-container aa-center text-Montserrat">
+                        <div class="w3-section">  
+                            <div class="w3-row">
+                                <div class="w3-threequarter">
+                                    <input class="w3-input" style="padding:0.5em;" name="email"  placeholder="Email Address*" type="text" required>
+                                </div>
+                                <div class="w3-rest" style="overflow: visible;">
+                                    <input type="submit" value="Subscribe" name="Submit" class="w3-large text-IBMCondensed w3-border aa-button2 w3-round-large animate-zoom-hover w3-text-white" style="padding: 0.5em;">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         <!-- END BLOG ENTRIES -->
         </div>
 
@@ -218,6 +241,7 @@
           </div>
           <hr> 
 
+               
           <!-- Labels / tags -->
           <div class="w3-card w3-margin">
             <div class="w3-container w3-padding aa-black">
@@ -232,6 +256,14 @@
             </div>
           </div>
 
+            <!--Facebook Comments-->
+            <div class="w3-card w3-margin">
+                <div class="w3-container aa-black">
+                    <div class="fb-comments" data-href="http://aaron-rn.github.io/blog.html" data-width="350" data-numposts="5"></div>
+                </div>
+            </div>
+            
+     
         <!-- END Introduction Menu -->
         </div>
 
@@ -398,7 +430,6 @@
         <!--JavaScript Code-->
         <script src="JS/DropMenu_JS.js"></script>
         <script src="JS/Functions_JS.js"></script>
-        
     </body>
     
 </html>
