@@ -33,6 +33,15 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    min-width: 360px;
+    //max-width: 1660px;
+    height: auto;
+    min-height: 1103px;
+    z-index: -1;
 }
 .BlogBody{
     margin-top: 13em;overflow-x: hidden;max-width:1260px;
