@@ -1,11 +1,11 @@
 .w3-theme-d1 {color:#fff !important; background-color:#d62d2d !important}
 .w3-theme-d2 {color:#fff !important; background-color:#932828 !important}
-.w3-theme-d3 {color:#fff; background-color: rgba(70,30,30,0.9);}
+.w3-theme-d3 {color:#fff; background-color: rgba(70,30,30,0.8);}
 .w3-theme-d5 {color:#fff; background-color: rgba(90,90,90,0.6);}
-.w3-theme-d3m {color:#fff; background-color: rgba(60,60,60,0.8);}
-.w3-theme-d33 {color:#fff; background-color: rgba(50,50,50,0.9);}
-.w3-theme-d4 {color:#fff; background-color: rgba(50,40,40,0.99);padding-top: 0.25em;padding-bottom: 0.25em;}
-.w3-theme-d44 {color:#fff; background-color: rgba(40,40,40,0.9);padding-top: 0.25em;padding-bottom: 0.25em;}
+.w3-theme-d3m {color:#fff; background-color: rgba(70,60,60,0.8);}
+.w3-theme-d33 {color:#fff; background-color: rgba(70,50,50,0.9);}
+.w3-theme-d4 {color:#fff; background-color: rgba(50,40,40,0.9);padding-top: 0.25em;padding-bottom: 0.25em;}
+.w3-theme-d44 {color:#fff; background-color: rgba(50,40,40,0.9);padding-top: 0.25em;padding-bottom: 0.25em;}
 
 .aa-link-selected{
     font-size:1.25em;
@@ -74,7 +74,7 @@
 }
 
 .BookOnlineBG {
-    background-image: url(../Images/Individuals/kickboxing.jpg);
+    background-image: url(../Images/Individuals/BookOnlineBG.jpg);
     background-repeat: no-repeat;
     background-position:center;
     background-attachment: fixed;

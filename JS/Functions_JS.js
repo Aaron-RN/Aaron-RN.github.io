@@ -4,13 +4,17 @@ if(GalleryButton){GalleryButton.addEventListener("click", function() {switchGall
 var VideosGallery = document.getElementById("VideoGallery");
 var PicturesGallery = document.getElementById("PictureGallery");
 var trainingPage = new Array();
+var hashLinks = new Array();
 trainingPage = document.querySelectorAll("#navTraining");
+hashLinks = document.querySelectorAll("a");
 
 
-for(var i = 0; i < trainingPage.length; i++)
+for(var i = 0; i < hashLinks.length; i++)
     {
-        trainingPage[i].addEventListener("click", function() {scrollToPage("Training")});
+        hashLinks[i].addEventListener("click", function(event) {scrollToPage(event, this)});
     }
+
+var isScrolling = 0;
 
 // Change style of navbar on scroll
 window.onscroll = function() {scrollNavBars()};
@@ -50,21 +54,55 @@ function scrollNavBars() {
     }
 }
 
-function scrollToPage(pageSelected) {
-    //alert(pageSelected);
-    alert(window.innerWidth + " x " + window.innerHeight);
-    var scrollSpeed = 1;
-    var pageSelected = document.getElementById(pageSelected);
-    var scrollToPos = pageSelected.offsetTop;
-    var scrolledDistance = 0;
-    //alert(scrollToPos + " , " + document.body.scrollTop + "/" + document.documentElement.scrollTop);
+function scrollToPage(e, elmnt) {
+    // Make sure this.hash has a value before overriding default behavior
+    //alert(elmnt.getAttribute("data-page-link"))
+    if(elmnt.getAttribute("data-page-link")){break;}
+    if (elmnt.hash !== "") {
+      // Prevent default anchor click behavior
+        event.preventDefault();
 
-    while (scrolledDistance < scrollToPos) {
-        //document.body.scrollTop += scrollSpeed;
-        //document.documentElement.scrollTop += scrollSpeed;
-        window.scrollBy(0 , scrollSpeed);
-        scrolledDistance += scrollSpeed;
-    }  
+      // Store hash
+        var hash = elmnt.hash;
+        //alert(hash);
+
+        if(isScrolling) return;
+        isScrolling = 1;
+        var scrollSpeed = 15;
+        var pageSelected = document.querySelector(hash);
+        var scrollToPos = pageSelected.offsetTop;
+        var scrolledDistance = 0;
+        var scrollDifference;
+        var scrollDirection;
+        if(scrollToPos > document.body.scrollTop || scrollToPos > document.documentElement.scrollTop)
+            {
+                scrollDirection = 1; //Scroll downwards
+                scrollDifference = scrollToPos - (document.body.scrollTop + document.documentElement.scrollTop);
+            }
+        if(scrollToPos < document.body.scrollTop || scrollToPos < document.documentElement.scrollTop)
+            {
+                scrollDirection = -1; //Scroll upwards
+                scrollDifference = (document.body.scrollTop + document.documentElement.scrollTop) - scrollToPos; 
+            }
+        //alert(scrollToPos + " , " + document.body.scrollTop + "/" + document.documentElement.scrollTop);
+        var id = setInterval(frame, 5);
+        function frame() {
+            if (scrolledDistance >= scrollDifference) {
+                    //alert("Scroll Done: " + scrolledDistance + " out of " + scrollToPos +"Window.ScrollTop: " + document.documentElement.scrollTop +" Scroll Difference: " + scrollDifference);
+                window.location.hash = hash;
+                isScrolling = 0;
+                clearInterval(id);
+            }  
+            else {
+                scrolledDistance += scrollSpeed;
+                window.scrollBy(0 , scrollSpeed * scrollDirection);
+            }
+        }
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        //window.location.hash = hash;
+    }
+    //alert(pageSelected);
+    //alert(window.innerWidth + " x " + window.innerHeight);
 }
 
 function showMore(id) {

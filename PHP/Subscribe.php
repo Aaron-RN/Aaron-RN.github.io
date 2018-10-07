@@ -1,20 +1,11 @@
 <?php
     if($_SERVER["REQUEST_METHOD"] == "POST") {
-        $name_field = $_POST['name'];
-        $name_field = htmlspecialchars($name_field);
-       
         $email_field = $_POST['email'];
         $email_field = htmlspecialchars($email_field);
-        
-        $subject_field = $_POST['subject'];
-        $subject_field = htmlspecialchars($subject_field);
-        
+
         $to = "GveJohnson@gmail.com";
-        $subject = "$name_field (Contact Request)";
-        $message = $_POST['message'];
-        $message = htmlspecialchars($message);
-            
-        $message = wordwrap($message,70);
+        $subject = "$email_field (Subscription Request)";
+
         // To send HTML mail, the Content-type header must be set
         $headers[] = 'MIME-Version: 1.0';
         $headers[] = 'Content-type: text/html; charset=iso-8859-1';
@@ -24,12 +15,10 @@
         $body = "
         <html>
             <head>
-                <Title> $name_field Contact Request </Title>
+                <Title> $email_field Mail Subscription Request </Title>
             </head>
             <body>
-                <p><strong>From:</strong> $name_field</p>
                 <p><strong>E-Mail:</strong> $email_field</p>
-                <p><strong>Message:</strong></p> <p style='margin-left:4em;'>$message</p>
             </body>
         </html>
         ";
